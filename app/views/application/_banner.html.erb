@@ -1,0 +1,10 @@
+<%= content_tag :div, :id=>"main_image", :class=> (if size == :tall then "tall" else "short" end) do %>
+  <%= image_tag !image.nil?? image : image_path("banner_short") %>
+  <%= content_tag :div, :id=>"text_strips", :class=> (if size == :tall then "tall" else "short" end) do %>
+    <span class="text_strip big">SEOUL | KOREA</span><br>
+    <span class="text_strip big">APRIL 18-21, 2017</span><br>
+    <% if size == :tall %>
+      <span class="text_strip small">Hoam Faculty House @ Seoul National University</span>
+    <% end %>
+  <% end %>
+<% end %>

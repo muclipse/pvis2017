@@ -1,0 +1,22 @@
+<% content_for :content do %>
+  <%= content_tag :table, :id=>"home_main_wrapper" do %>
+    <tr>
+      <%= content_tag :td, :id=>"home_left" do %>
+        <% if @show_common_content == true %>
+          <%= render :partial=>"application/left_common_content"%>
+        <% end %>
+        <%= yield(:left_column) if content_for?(:left_column) %>
+      <% end %>
+      
+      <%= content_tag :td, :id=>"home_main" do %>
+        <% if !@title.nil? %>
+          <%= content_tag :h2, @title %>
+        <% end %>
+        <%= content_for?(:main_column) ? yield(:main_column) : yield %>
+      <% end %>
+    </tr>
+  <% end %>                    
+<% end %>
+
+
+<%= render template: "layouts/application" %>

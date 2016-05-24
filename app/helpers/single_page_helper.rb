@@ -1,0 +1,3 @@
+module SinglePageHelper
+
+end

@@ -1,0 +1,15 @@
+<%= subheader("Deadlines") %>
+Upcoming deadlines will be determined soon.
+
+<%= subheader("Sponsors") %>
+<% if !@sponsors.nil? %>
+  <%= content_tag :ul, :class=>"sponsor_list" do %>
+    <% @sponsors.each do |s| %>
+      <%= content_tag :li do %>
+        <%= link_to s[:url] do %>
+          <%= image_tag s[:thumbnail], :alt=>s[:name] %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>

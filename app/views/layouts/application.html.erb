@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IEEE PacificVis 2017</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+ 
+</head>
+<body>
+  <%= content_tag :div, id: "wrap" do %>
+    <%= content_tag :div, id: "header" do %>
+      <%= content_tag :div, nil, class: "strip" %>
+      <%= content_tag :div, id: "title" do %>
+        IEEE PacificVis 2017
+      <% end %>
+      <%= content_tag :ul, id: "gnb" do %>
+        <li><%= link_to "Home", root_path %></li>
+        <li>Call for Participation (TBD)</li>
+        <li>Venue (TBD)</li>
+        <li>Organizers (TBD)</li>
+      <% end %>
+    <% end %>   
+    
+    <%= content_tag :div, :id=>"main" do %>
+      
+      <%= render partial: "application/banner", :locals=>{:size=>@banner_size, :image=>image_url(@banner_image)} %>
+      
+      
+      <%= content_for?(:content) ? yield(:content) : yield %>
+    <% end %>
+    
+    <%= content_tag :div, :id=>"footer" do %>
+      <%= content_tag :div, :id=>"copyright" do %>
+        Copyright © 2016 IEEE PacificVis. All Rights Reserved.
+      <% end %>
+    <% end %>
+    
+  <% end %>
+</body>
+</html>
