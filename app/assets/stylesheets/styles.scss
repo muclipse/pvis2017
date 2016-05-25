@@ -11,6 +11,15 @@ $link_color: #18A7C1;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff892a', endColorstr='#e95757',GradientType=0 ); /* IE6-9 */
 }
 
+@mixin button_gradient(){
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff892a+0,e95757+100 */
+    background: $link_color; /* Old browsers */
+    background: -moz-linear-gradient(left,  $link_color 0%, #65d1c0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  $link_color 0%,#65d1c0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  $link_color 0%,#65d1c0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$link_color', endColorstr='#65d1c0',GradientType=0 ); /* IE6-9 */
+}
+
 html{
   position: relative;
   min-height: 100%;
@@ -45,21 +54,32 @@ h3{
 }
 
 a:link{
-      text-decoration: none;
-      color: $link_color;
-    }
+  text-decoration: none;
+  color: $link_color;
+}
 
-    a:visited{
-      color: $link_color;
-    }
+a:visited{
+  color: $link_color;
+}
 
-    a:hover{
-      color: #ff892a;
-    }
+a:hover{
+  color: #ff892a;
+}
 
-    a:active{
+a:active{
 
-    }
+}
+
+.button{
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+
+  padding: 9px 16px;
+  margin-top: 15px;
+
+  @include button_gradient();
+}
 
 #wrap{
     width: $wrapper_width;
@@ -327,4 +347,8 @@ table#home_main_wrapper {
       }
     }
   }
+}
+
+.submission_system_button{
+  margin-top:28px;
 }
