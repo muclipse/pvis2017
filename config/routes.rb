@@ -9,6 +9,12 @@ Rails.application.routes.draw do
 
   get 'cfp' => 'call_for_participation#index', :as=>"cfp"
 
+  scope "/cfp" do
+    get 'paper' => 'call_for_participation#paper', :as=>"cfp_paper"
+    get 'visualization_note' => 'call_for_participation#visualization_note', :as=>"cfp_visualization_note"
+    get 'poster' => 'call_for_participation#poster', :as=>"cfp_poster"
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

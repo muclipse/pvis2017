@@ -1,0 +1,55 @@
+<p>
+  PacificVis is a unified visualization symposium, welcoming all areas of visualization research such as: information, scientific, graph, security, software and bio-visualization. Authors are invited to submit original and unpublished research and application papers in all areas of visualization. We encourage papers in any new, novel, and exciting research area that pertains to visualization.
+</p>
+<p>
+  All submitted papers will go through a two-stage review process to guarantee the publication of high-quality papers. All papers accepted by IEEE Pacific Visualization 2017 will be published in the proceedings by IEEE and will be also included in the <strong>IEEE Digital Library</strong>. Selected research papers of outstanding quality will appear in <strong>IEEE Transactions of Visualization and Computer Graphics</strong>.
+</p>
+
+<%= subheader("Important Dates") %>
+<p>
+Submission deadlines will be determined soon.
+</p>
+
+<%= subheader("Topics") %>
+<p>
+Suggested topics include, but are not limited to:
+</p>
+<div class="topic_list">
+  <% @topics.each do |row| %>
+    <%= content_tag :h3, "#{row[:category]}:" %>
+    <%= content_tag :ul do%>
+      <% row[:list].each do |topic| %>
+        <%= content_tag :li, topic %>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
+
+<%= subheader("Submission") %>
+<p>
+  Original unpublished papers of up to 8 pages (two-column, single-spaced, 9 point font, including figures, tables and references) are invited. Manuscripts must be written in English, and follow the <%= link_to "formatting guidelines", @formatting_guideline %>. <%= link_to "DOC", @format_doc %> and <%= link_to "LaTeX", @format_latex %> templates are available. Reviewing will be double blind, please remove all author and affiliation information from submissions and supplemental files. Please substitute your paper's ID number for the author name. Papers should be submitted electronically in Adobe PDF format. Please provide supplemental videos in QuickTime MPEG-4 or DivX version 5, and use TIFF, JPEG, or PNG for supplemental images.
+</p>
+<%= submission_system_button %>
+
+<%= subheader("Paper Types") %>
+<p>
+  A VIS paper typically falls into one of five categories: technique, system, design study, evaluation, or model. We briefly discuss these categories below. Although your main paper type has to be specified during the paper submission process, papers can include elements of more than one of these categories. Please see "Process and Pitfalls in Writing Information Visualization Research Papers" by Tamara Munzner for more detailed discussion on how to write a successful VIS paper.
+</p>
+<p>
+                <strong>Technique papers</strong> introduce novel techniques or algorithms that have not previously appeared in the literature, or that significantly extend known techniques or algorithms, for example by scaling to datasets of much larger size than before or by generalizing a technique to a larger class of uses. The technique or algorithm description provided in the paper should be complete enough that a competent graduate student in visualization could implement the work, and the authors should create a prototype implementation of the methods. Relevant previous work must be referenced, and the advantage of the new methods over it should be clearly demonstrated. There should be a discussion of the tasks and datasets for which this new method is appropriate, and its limitations. Evaluation through informal or formal user studies, or other methods, will often serve to strengthen the paper, but are not mandatory.
+</p>
+<p>
+                <strong>System papers</strong> present a blend of algorithms, technical requirements, user requirements, and design that solves a major problem. The system that is described is both novel and important, and has been implemented. The rationale for significant design decisions is provided, and the system is compared to documented, best-of-breed systems already in use. The comparison includes specific discussion of how the described system differs from and is, in some significant respects, superior to those systems. For example, the described system may offer substantial advancements in the performance or usability of visualization systems, or novel capabilities. Every effort should be made to eliminate external factors (such as advances in processor performance, memory sizes or operating system features) that would affect this comparison. For further suggestions, please review "How (and How Not) to Write a Good Systems Paper" by Roy Levin and David Redell, and "Empirical Methods in CS and AI" by Toby Walsh.
+</p>
+<p>
+                <strong>Application / Design Study papers</strong> explore the choices made when applying visualization and visual analytics techniques in an application area, for example relating the visual encodings and interaction techniques to the requirements of the target task. Similarly, Application papers have been the norm when researchers describe the use of visualization techniques to glean insights from problems in engineering and science. Although a significant amount of application domain background information can be useful to provide a framing context in which to discuss the specifics of the target task, the primary focus of the case study must be the visualization content. The results of the Application / Design Study, including insights generated in the application domain, should be clearly conveyed. Describing new techniques and algorithms developed to solve the target problem will strengthen a design study paper, but the requirements for novelty are less stringent than in a Technique paper. Where necessary, the identification of the underlying parametric space and its efficient search must be aptly described. The work will be judged by the design lessons learned or insights gleaned, on which future contributors can build. We invite submissions on any application area.
+</p>
+<p>
+                <strong>Evaluation papers</strong> explore the usage of visualization and visual analytics by human users, and typically present an empirical study of visualization techniques or systems. Authors are not necessarily expected to implement the systems used in these studies themselves; the research contribution will be judged on the validity and importance of the experimental results as opposed to the novelty of the systems or techniques under study. The conference committee appreciates the difficulty and importance of designing and performing rigorous experiments, including the definition of appropriate hypotheses, tasks, data sets, selection of subjects, measurement, validation and conclusions. The goal of such efforts should be to move from mere description of experiments, toward prediction and explanation. We do suggest that potential authors who have not had formal training in the design of experiments involving human subjects may wish to partner with a colleague from an area such as psychology or human-computer interaction who has experience with designing rigorous experimental protocols and statistical analysis of the resulting data. Other novel forms of evaluation are also encouraged.
+</p>
+<p>
+                <strong>Theory/Model papers</strong> present new interpretations of the foundational theory of visualization and visual analytics. Implementations are usually not relevant for papers in this category. Papers should focus on basic advancement in our understanding of how visualization techniques complement and exploit properties of human vision and cognition.
+</p>
+
+
+<%= end_back_link "Back to Call for Participation", cfp_path %>

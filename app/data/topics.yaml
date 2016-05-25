@@ -1,0 +1,85 @@
+'Visualization application areas':
+  - statistical graphics and mathematics
+  - financial, security and business visualization
+  - physical sciences and engineering
+  - earth, space, and environmental sciences
+  - geographic/geospatial/ terrain visualization
+  - molecular, biomedical, bioinformatics and medical visualization
+  - text, documents and software visualization
+  - social, ambient and information sciences
+  - education and everyday visualization
+  - multimedia (image/video/music) visualization
+  - any other non-spatial data or spatial data that is visualized with a new spatial mapping
+
+'Data focused visualization research':
+  - high-dimensional data and dimensionality reduction and data compression
+  - multidimensional multi-field, multi-modal, multi-resolution and multi-variate data
+  - causality and uncertainty data
+  - time series, time varying, streaming and flow data
+  - scalar, vector and tensor fields
+  - regular and unstructured grids
+  - point-based data
+  - large scale data (petabytes, ...)
+
+'Technique focused visualization research':
+  - volume modeling and rendering
+  - extraction of surfaces
+  - topology-based and geometry-based techniques
+  - glyph-based techniques
+  - integrating spatial and non-spatial data visualization
+  - machine-learning approaches
+
+'Graph and network visualization research':
+  - design and experimentation of graph drawing algorithms
+  - techniques, interfaces and interaction methods for graphs, trees, and other relational data
+  - visualization of graphs and networks in application areas (e.g., social sciences, biology, geography, software engineering, circuit design, business intelligence)
+  - interfaces and interaction techniques for graph and network visualizations
+  - benchmarks and experimental analysis for graph visualization systems and user interfaces
+
+'Interaction focused visualization research':
+  - icon- and glyph-based visualization
+  - focus + context techniques
+  - animation
+  - zooming and navigation
+  - linking + brushing
+  - coordinated multiple views
+  - view-dependent visualization
+  - data labeling, editing and annotation
+  - collaborative, co-located and distributed visualization
+  - manipulation and deformation
+  - visual data mining and visual knowledge discovery
+
+'Empirical and comprehension focused visualization research':
+  - visual design and aesthetics
+  - illustrative visualization
+  - cognition and perception issues
+  - cognitive studies on graph drawing readability and user interaction
+  - presentation, dissemination and storytelling
+  - design studies, case studies and focus groups
+  - task and requirements analysis
+  - metrics and benchmarks
+  - 'evaluations of all types: qualitative, quantitative, laboratory, field, and usability studies'
+  - validation and verification
+  - perception theory including such factors as color texture, scene, motion perception, perceptual cognition
+
+'System focused visualization research':
+  - novel algorithms and mathematics
+  - mobile and ubiquitous
+  - taxonomies and models
+  - methodologies, discussions and frameworks
+  - visual design, visualization system and toolkit design
+  - data warehousing, database visualization and data mining
+  - collaborative and distributed visualization
+  - mathematical theories for visualization
+
+'Hardware, Display and Interaction Technology':
+  - large and high-res displays
+  - stereo displays
+  - mobile and ubiquitous environments
+  - immersive and virtual environments
+  - multimodal input (touch, haptics, voice, etc.)
+  - hardware acceleration
+  - GPUs and multi-core architectures
+  - CPU and GPU clusters
+  - distributed systems, grid and cloud environments
+  - volume graphics hardware

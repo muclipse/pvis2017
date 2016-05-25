@@ -1,3 +1,24 @@
 // Place all the styles related to the call_for_paper controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.topic_list{
+  text-transform: capitalize;
+
+
+  ul{
+      font-size: 14px;
+      font-weight: 600;
+      list-style-position: inside;
+      color: #848484;
+
+    li{
+      margin-top: 12px;
+    }
+
+    li:first-child{
+      margin-top: 0px;
+    }
+  } 
+}

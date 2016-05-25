@@ -1,6 +1,6 @@
 $wrapper_width: 1024px;
 $footer_height: 42px;
-$link_color: #ff892a;
+$link_color: #18A7C1;
 
 @mixin signature_gradient(){
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff892a+0,e95757+100 */
@@ -37,6 +37,29 @@ h2{
     font-size: 24px;
     margin-top: 30px;
 }
+
+h3{
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+a:link{
+      text-decoration: none;
+      color: $link_color;
+    }
+
+    a:visited{
+      color: $link_color;
+    }
+
+    a:hover{
+      color: #ff892a;
+    }
+
+    a:active{
+
+    }
 
 #wrap{
     width: $wrapper_width;
@@ -192,6 +215,12 @@ table#home_main_wrapper {
   }
 }
 
+.end_back_link{
+  text-align: right;
+  font-weight: bold;
+  font-size: 14px;
+}
+
 .subheader{
     margin-top: 60px;
     margin-bottom: 24px;
@@ -217,23 +246,6 @@ table#home_main_wrapper {
       float: right;
       font-size: 15px;
       margin-top: 11px;
-    }
-
-    a:link{
-      text-decoration: none;
-      color: $link_color;
-    }
-
-    a:visited{
-      color: $link_color;
-    }
-
-    a:hover{
-      color: #18A7C1;
-    }
-
-    a:active{
-
     }
 }
 
@@ -315,5 +327,4 @@ table#home_main_wrapper {
       }
     }
   }
-  
 }
