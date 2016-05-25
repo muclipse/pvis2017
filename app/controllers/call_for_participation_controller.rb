@@ -23,7 +23,7 @@ class CallForParticipationController < ApplicationController
   def paper
     @title = "Call for Papers"
 
-    topics = YAML.load_file('app/data/topics.yaml')
+    topics = YAML.load_file(Rails.root.join('app/data/topics.yaml'))
     @topics = topics.keys.map{|k| {:category=>k, :list=>topics[k]}}
   end
 
