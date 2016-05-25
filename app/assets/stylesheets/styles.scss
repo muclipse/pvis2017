@@ -1,5 +1,6 @@
 $wrapper_width: 1024px;
 $footer_height: 42px;
+$link_color: #ff892a;
 
 @mixin signature_gradient(){
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff892a+0,e95757+100 */
@@ -128,7 +129,14 @@ ul#gnb{
         
         #text_strips{
           position:absolute;
+        }
+
+        #text_strips.tall{
           bottom: 26px;
+        }
+
+        #text_strips.short{
+          top: 26px;
         }
         
         .text_strip{
@@ -203,6 +211,29 @@ table#home_main_wrapper {
       -ms-transform: translate(-6px, -18px) rotate(45deg); /* IE 9 */
       -webkit-transform: translate(-6px, -18px) rotate(45deg); /* Safari */
       transform: translate(-6px, -18px) rotate(45deg);
+    }
+
+    .tail{
+      float: right;
+      font-size: 15px;
+      margin-top: 11px;
+    }
+
+    a:link{
+      text-decoration: none;
+      color: $link_color;
+    }
+
+    a:visited{
+      color: $link_color;
+    }
+
+    a:hover{
+      color: #18A7C1;
+    }
+
+    a:active{
+
     }
 }
 

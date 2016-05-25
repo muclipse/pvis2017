@@ -1,4 +1,11 @@
 <div class="subheader">
   <%= title %>
   <div class="bullet"></div>
+  <% if !local_assigns[:tail].nil? %>
+    <div class="tail">
+      <%= link_to tail[:url] do %>
+        <%= tail[:text] %>
+      <% end %>
+    </div>
+  <% end %>
 </div>
