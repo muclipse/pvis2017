@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160524073335) do
+ActiveRecord::Schema.define(version: 20160531044259) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -45,6 +45,36 @@ ActiveRecord::Schema.define(version: 20160524073335) do
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+
+  create_table "chair_assignments", force: :cascade do |t|
+    t.integer  "chair_group_id"
+    t.integer  "chair_id"
+    t.integer  "position"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "chair_assignments", ["chair_group_id"], name: "index_chair_assignments_on_chair_group_id"
+  add_index "chair_assignments", ["chair_id"], name: "index_chair_assignments_on_chair_id"
+
+  create_table "chair_groups", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "chairs", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "affiliation"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "thumbnail_file_name"
+    t.string   "thumbnail_content_type"
+    t.integer  "thumbnail_file_size"
+    t.datetime "thumbnail_updated_at"
+  end
 
   create_table "sponsors", force: :cascade do |t|
     t.integer  "position"
