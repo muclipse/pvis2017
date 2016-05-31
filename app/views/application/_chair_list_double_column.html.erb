@@ -1,0 +1,7 @@
+<%= content_tag :ul, :class=>"chairs" do %>
+  <% chairs.each do |chair| %>
+    <%= content_tag :li do %>
+      <%= render partial: "chair_element_double_column", :locals=>{thumbnail: chair.thumbnail.exists?? chair.thumbnail(:thumb).url : nil, name: chair.name, affiliation: chair.affiliation} %>
+    <% end %>
+  <% end %>
+<% end %>
