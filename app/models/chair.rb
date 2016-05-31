@@ -8,8 +8,8 @@ class Chair < ActiveRecord::Base
     :url => "/files/:class/:attachment/:id_:style_:hash.:extension",
     :hash_secret => "HelloPVis",
     :styles => {
-      :thumb=> "300x300#",
-      :thumb_retina=>"600x600#"
+      :thumb=> "118x118#",
+      :thumb_retina=>"236x236#"
     }
 
   validates_attachment_content_type :thumbnail,
