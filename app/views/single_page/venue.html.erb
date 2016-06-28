@@ -1,0 +1,26 @@
+<p>
+PacificVis 2017 will be hosted in Hoam Faculty House of Seoul National University from April 18th to April 21th. This page provides details on the different venues we have for PacificVis 2017, and to help your travels to here.
+</p>
+
+<%= subheader("Hoam Faculty House") %>
+<p>
+Note that Hoam Faculty House is <strong>outside</strong> the Seoul National University campus. Its near the Nakseongdae station on <span style="color:#4BBB60">subway line no. 2 (the green line)</span>. Please check the map:
+</p>
+
+<div class="paragraph">
+<table class="location_information">
+  <tr>
+    <td>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.7020396052962!2d126.95671971527665!3d37.467756437536735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca018af295bcd%3A0xb748d367f0649e98!2z7ISc7Jq464yA7ZWZ6rWQIO2YuOyVlOq1kOyImO2ajOq0gA!5e0!3m2!1sen!2skr!4v1467121469746" class="map" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </td>
+    <td class="route_cell">
+      <% @routes_hoam.each do |route| %>
+        <%= content_tag :div, :class=>"route" do%>
+          <div class="name">From <b><%=route[:from] %></b> <%= "<br>to <b>#{route[:to]}</b>".html_safe unless route[:to].nil? %> </div>
+          <%= link_to "Route on Google Map", route[:url], :target=>"_blank" %>
+        <% end %>
+      <% end %>
+    </td>
+  </tr>
+</table>
+</div>

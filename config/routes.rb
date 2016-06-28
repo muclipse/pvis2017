@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   
   get 'committee' => 'single_page#committee', :as=>"committee"
 
+  get 'venue' => 'single_page#venue', :as=>"venue"
+
   get 'cfp' => 'call_for_participation#index', :as=>"cfp"
 
   scope "/cfp" do

@@ -219,7 +219,7 @@ table#home_main_wrapper {
   td#home_main{
     padding-left: 55px !important;      
     
-    p{
+    p, .paragraph{
       margin-top: 28px;
       font-size: 14px;
       font-weight: 600;
@@ -360,6 +360,39 @@ table#home_main_wrapper {
       }
     }
   }
+
+
+  .location_information{
+    line-height: initial;
+      
+    .map{
+      width: 350px;
+      height: 350px;
+    }
+
+    .route_cell{
+      padding-left: 15px;
+      .route{
+        margin-top: 25px;
+        .name{
+          margin-top:0px;
+          margin-bottom: 3px;
+          font-size: 14px;
+          color: #252525;
+        }
+
+        a{
+          font-size: 12px;
+          font-weight: bold;
+        } 
+      }
+
+      .route:first-child{
+        margin-top: 0px;
+      }
+    }
+  }
+
 }
 
 .submission_system_button{

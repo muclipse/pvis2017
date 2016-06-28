@@ -9,9 +9,14 @@ class ApplicationController < ActionController::Base
      @sponsors = Sponsor.all.order("position asc").map{|s| {:name=>s.name, :thumbnail=>s.thumbnail.url, :url=>s.url}}
   end
 
-  def assert_html
+  def assert_html(layout=nil)
     respond_to do |format|
-      format.html
+      if layout.nil?
+        format.html
+      else
+        format.html { render layout: layout }
+      end
+      
       format.all { render nothing: true, status: 404 }
     end
   end
