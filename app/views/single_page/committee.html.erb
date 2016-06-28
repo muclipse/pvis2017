@@ -1,0 +1,6 @@
+<% if !@chair_groups.nil? %>
+  <% @chair_groups.each do |group| %>
+    <%= content_tag :div, group.name, :class=>"content_subtitle" %>
+    <%= render partial: "chair_list_double_column", :locals=>{chairs: group.chairs} %>
+  <% end %>
+<% end %>

@@ -34,7 +34,7 @@ index do
 form :html => {:multipart => true} do |f|
   f.inputs "Detail" do
     f.input :name
-    f.input :thumbnail, :as => :file, :hint => (image_tag(f.object.thumbnail(:thumb).url) if f.object.thumbnail.exists?)
+    f.input :thumbnail, :as => :file, :hint => (image_tag(f.object.thumbnail(:thumb)) if f.object.thumbnail.exists?)
     f.input :email
     f.input :affiliation
   end

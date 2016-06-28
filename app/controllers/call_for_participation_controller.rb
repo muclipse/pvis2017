@@ -17,6 +17,7 @@ class CallForParticipationController < ApplicationController
   public
   def index
     @title = "Call for Participation"
+    assert_html
   end
 
 
@@ -25,16 +26,19 @@ class CallForParticipationController < ApplicationController
 
     topics = YAML.load_file(Rails.root.join('app/data/topics.yaml'))
     @topics = topics.keys.map{|k| {:category=>k, :list=>topics[k]}}
+    assert_html
   end
 
 
   def visualization_note
     @title = "Call for Visualization Notes"
+    assert_html
   end
 
 
   def poster
     @title = "Call for Posters"
+    assert_html
   end
 
 end

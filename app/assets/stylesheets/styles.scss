@@ -307,10 +307,19 @@ table#home_main_wrapper {
     
 }
 
+.content_subtitle{
+  margin-top: 41px;
+  font-size: 17px;
+  color: #A0A0A0;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+          
 #home_main{
   
   .chairs{
     list-style-type: none;
+    margin-top: -20px;
     
     .thumb{
       width: 118px;
@@ -329,6 +338,7 @@ table#home_main_wrapper {
     
     li{
       display: inline-block;
+      margin-top: 20px;
     }
 
     table{

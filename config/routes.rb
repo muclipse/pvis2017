@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'single_page#home'
+  
+  get 'committee' => 'single_page#committee', :as=>"committee"
 
   get 'cfp' => 'call_for_participation#index', :as=>"cfp"
 
