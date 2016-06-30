@@ -4,7 +4,10 @@ PacificVis 2017 will be hosted in Hoam Faculty House of Seoul National Universit
 
 <%= subheader("Hoam Faculty House") %>
 <p>
-Note that Hoam Faculty House is <strong>outside</strong> the Seoul National University campus. Its near the Nakseongdae station on <span style="color:#4BBB60">subway line no. 2 (the green line)</span>. Please check the map:
+  Since its inception in 1990, the Hoam Faculty House (HFH) has always stood by Seoul National University (SNU) noted for Korea's intellectual epicenter. As SNU's best support entity for education and research activities, it is well equipped with medium and large-sized meeting rooms for diverse conferences and events, restaurant for supply of safe and healthy food, and comfortable lodging facilities. Moreover, it runs a gallery for displaying works of notable artists, holds various concerts enjoyable for everyone, and undertakes ongoing renovations across installations and interior design, thereby evolving into a multiple cultural space where all visitors can build fond memories of their own.
+</p>
+<p>
+  Note that Hoam Faculty House is near the Nakseongdae station on <span style="color:#4BBB60">subway line no. 2 (the green line)</span>. Please check the map:
 </p>
 
 <div class="paragraph">
@@ -17,7 +20,12 @@ Note that Hoam Faculty House is <strong>outside</strong> the Seoul National Univ
       <% @routes_hoam.each do |route| %>
         <%= content_tag :div, :class=>"route" do%>
           <div class="name">From <b><%=route[:from] %></b> <%= "<br>to <b>#{route[:to]}</b>".html_safe unless route[:to].nil? %> </div>
-          <%= link_to "Route on Google Map", route[:url], :target=>"_blank" %>
+          <% if !route[:description].nil? %>
+            <div class="description">
+              <%= route[:description].html_safe %>
+            </div>
+          <% end %>
+          <%= link_to route[:url_text].nil?? "Route on Google Map":route[:url_text], route[:url], :target=>"_blank" %>
         <% end %>
       <% end %>
     </td>
