@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   def use_common_content
      @show_common_content =true
      @sponsors = Sponsor.all.order("position asc").map{|s| {:name=>s.name, :thumbnail=>s.thumbnail.url, :url=>s.url}}
+     @upcoming_deadlines = YAML.load_file(Rails.root.join('app/data/dates.yaml'))['upcoming'].to_a.map{|e| {:name=>e[0], :time=>e[1]}}  
   end
 
   def assert_html(layout=nil)

@@ -14,9 +14,16 @@ class CallForParticipationController < ApplicationController
     use_common_content
   end
 
+  def get_deadlines(key)
+    YAML.load_file(Rails.root.join('app/data/dates.yaml'))[key].to_a.map{|e| {:name=>e[0], :time=>e[1]}}
+  end
+
   public
   def index
     @title = "Call for Participation"
+
+    @deadlines = {:papers=>get_deadlines("papers")}
+
     assert_html
   end
 
@@ -26,6 +33,7 @@ class CallForParticipationController < ApplicationController
 
     topics = YAML.load_file(Rails.root.join('app/data/topics.yaml'))
     @topics = topics.keys.map{|k| {:category=>k, :list=>topics[k]}}
+    @deadlines = get_deadlines("papers")
     assert_html
   end
 

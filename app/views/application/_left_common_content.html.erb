@@ -1,5 +1,20 @@
 <%= subheader("Deadlines") %>
-<p>Upcoming deadlines will be determined soon.</p>
+<% if @upcoming_deadlines.nil? %>
+  <p>Upcoming deadlines will be determined soon.</p>
+<% else %>
+  <ul class="important_dates">
+    <% @upcoming_deadlines.each do |d| %>
+      <li>
+        <div class='date'>
+          <%= d[:time] %>
+        </div>
+        <div class='description'>
+          <%= d[:name].capitalize %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
 
 <%= subheader("Sponsors") %>
 <% if !@sponsors.nil? %>

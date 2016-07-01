@@ -1,0 +1,12 @@
+<table class="content_table">
+  <% deadlines.each do |deadline| %>
+    <tr>
+      <th>
+        <%= deadline[:name].capitalize%>
+      </th>
+      <td>
+        <%= deadline[:time]%>
+      </td>
+    </tr>
+  <% end %>
+</table>

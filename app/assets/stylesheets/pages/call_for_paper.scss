@@ -22,3 +22,22 @@
     }
   } 
 }
+
+table.content_table{
+  text-align: left;
+  font-size: 14px;
+  th, td{;
+    padding-bottom:8px;
+    vertical-align: middle;
+  }
+
+  tr:last-child > th, tr:last-child > td{
+    padding-bottom:0px;
+  }
+
+  td{
+    padding-left: 25px;
+    font-weight: 600;
+    color: #575757;
+  }
+}

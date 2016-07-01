@@ -1,14 +1,15 @@
 <p>
-  PacificVis is a unified visualization symposium, welcoming all areas of visualization research such as: information, scientific, graph, security, software and bio-visualization. Authors are invited to submit original and unpublished research and application papers in all areas of visualization. We encourage papers in any new, novel, and exciting research area that pertains to visualization.
+  PacificVis is a unified visualization symposium, welcoming all areas of visualization research such as: information visualization, scientific visualization, graph and network visualization, visual analytics, and specific applications such as (but not limited to) security-, software- and bio-visualization. Authors are invited to submit original and unpublished research and application papers in all areas of visualization. We encourage papers in any new, novel, and exciting research area that pertains to visualization.
 </p>
 <p>
-  All submitted papers will go through a two-stage review process to guarantee the publication of high-quality papers. All papers accepted by IEEE Pacific Visualization 2017 will be published in the proceedings by IEEE and will be also included in the <strong>IEEE Digital Library</strong>. Selected research papers of outstanding quality will appear in <strong>IEEE Transactions of Visualization and Computer Graphics</strong>.
+  All submitted papers will go through a two-stage review process to guarantee the publication of high-quality papers. All papers accepted by IEEE Pacific Visualization 2017 will be published by IEEE and will be also included in the <strong>IEEE Digital Library</strong>. Details regarding journal publication of selected papers to be announced soon.
 </p>
 
 <%= subheader("Important Dates") %>
-<p>
-Submission deadlines will be determined soon.
-</p>
+<% if @deadlines %>
+  <%= render :partial=>'deadlines_table', :locals=>{deadlines: @deadlines} %>
+<% end %>
+
 
 <%= subheader("Topics") %>
 <p>
