@@ -28,3 +28,18 @@
     <% end %>
   <% end %>
 <% end %>
+
+<% if !@previous.nil? %>
+  <%= subheader("Previous Events") %>
+  <ul class="previous_years">
+    <% @previous.each do |p| %>
+      <%= link_to p.url do %>
+      <li>
+        <div class='year'><%= p.year %></div>
+        <div class='location'><%= p.location %></div>
+        <div class='date'><%= "#{p.from.strftime("%b %d")} - #{p.to.strftime("%b %d")}" %></div>
+      </li>
+      <% end %>
+    <% end %>
+</ul>
+<% end %>

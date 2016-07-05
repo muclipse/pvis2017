@@ -53,3 +53,5 @@ gem 'devise'
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'activeadmin-sortable'
+
+gem 'country_select'

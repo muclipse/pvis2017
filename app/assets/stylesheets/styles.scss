@@ -307,6 +307,38 @@ table#home_main_wrapper {
     
 }
 
+.previous_years{
+  list-style-type: none;
+  font-size: 14px;
+
+  li{
+    white-space: nowrap;
+    margin-top: 5px;
+
+    div{
+      display: inline-block;
+    }
+
+    .year{
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    
+    .location{
+      font-weight: 600;
+      width: 100px;
+    }
+
+    .date{
+      font-size: 13px;
+    }
+  }
+
+  a:first-child li{
+    margin-bottom: 0px;
+  }
+}
+
 .content_subtitle{
   margin-top: 41px;
   font-size: 17px;

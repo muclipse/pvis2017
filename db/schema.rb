@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160531044259) do
+ActiveRecord::Schema.define(version: 20160705052206) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -75,6 +75,19 @@ ActiveRecord::Schema.define(version: 20160531044259) do
     t.integer  "thumbnail_file_size"
     t.datetime "thumbnail_updated_at"
   end
+
+  create_table "previous_conferences", force: :cascade do |t|
+    t.integer  "year"
+    t.string   "location"
+    t.string   "country"
+    t.string   "url"
+    t.date     "from"
+    t.date     "to"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "previous_conferences", ["year"], name: "index_previous_conferences_on_year", unique: true
 
   create_table "sponsors", force: :cascade do |t|
     t.integer  "position"

@@ -1,0 +1,461 @@
+
+---
+sponsors:
+  columns:
+  - id
+  - position
+  - name
+  - url
+  - sponsor_type
+  - created_at
+  - updated_at
+  - thumbnail_file_name
+  - thumbnail_content_type
+  - thumbnail_file_size
+  - thumbnail_updated_at
+  records: 
+  - - 1
+    - 0
+    - IEEE
+    - https://www.ieee.org
+    - Organizer
+    - '2016-05-31 04:21:38.343733'
+    - '2016-05-31 04:21:38.343733'
+    - sponsors_ieee.png
+    - image/png
+    - 3379
+    - '2016-05-31 04:21:38.320275'
+  - - 2
+    - 1
+    - IEEE VGTC
+    - http://vgtc.org/
+    - Organizer
+    - '2016-05-31 04:22:00.678858'
+    - '2016-05-31 04:22:00.678858'
+    - sponsors_vgtc.png
+    - image/png
+    - 4754
+    - '2016-05-31 04:22:00.673174'
+  - - 3
+    - 2
+    - IEEE Computer Society
+    - http://computer.org/
+    - Organizer
+    - '2016-05-31 04:22:27.220361'
+    - '2016-05-31 04:22:27.220361'
+    - sponsors_ieeecs.png
+    - image/png
+    - 6261
+    - '2016-05-31 04:22:27.214715'
+
+---
+admin_users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - yhkim@hcil.snu.ac.kr
+    - "$2a$11$Pd5/5/QzNYRKzp4s8hW1eeVlpwT2ykkyfcgl5VNJr/B3DzqW4SjmC"
+    - 
+    - 
+    - 
+    - 12
+    - '2016-07-05 05:33:45.012853'
+    - '2016-07-05 05:30:47.114225'
+    - 147.46.242.28
+    - 147.46.242.28
+    - '2016-05-30 08:28:16.169676'
+    - '2016-07-05 05:33:45.014415'
+
+---
+chair_groups:
+  columns:
+  - id
+  - name
+  - email
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - General Conference Co-Chairs
+    - pvis2017
+    - '2016-05-31 09:09:58.296083'
+    - '2016-07-01 07:39:49.563126'
+  - - 2
+    - Papers Co-Chairs
+    - papers
+    - '2016-06-13 01:30:23.430345'
+    - '2016-07-01 07:39:39.889272'
+  - - 3
+    - PacificVAST Co-Chairs
+    - vast
+    - '2016-06-13 03:39:57.288696'
+    - '2016-07-01 07:39:34.149779'
+  - - 4
+    - Visualization Notes Co-Chairs
+    - note
+    - '2016-06-13 03:40:35.886784'
+    - '2016-07-01 07:39:28.219660'
+  - - 5
+    - Posters Co-Chairs
+    - posters
+    - '2016-06-13 03:41:05.389689'
+    - '2016-07-01 07:39:22.817671'
+  - - 6
+    - Webmaster & Design Chair
+    - ''
+    - '2016-07-01 07:32:35.552413'
+    - '2016-07-01 08:07:52.685580'
+  - - 7
+    - Finance Chair
+    - ''
+    - '2016-07-01 08:11:30.106123'
+    - '2016-07-01 08:11:30.106123'
+  - - 8
+    - Publicity Chair
+    - ''
+    - '2016-07-01 08:11:41.930533'
+    - '2016-07-01 08:11:41.930533'
+
+---
+chairs:
+  columns:
+  - id
+  - name
+  - email
+  - affiliation
+  - created_at
+  - updated_at
+  - thumbnail_file_name
+  - thumbnail_content_type
+  - thumbnail_file_size
+  - thumbnail_updated_at
+  records: 
+  - - 1
+    - Jinwook Seo
+    - jseo@snu.ac.kr
+    - Seoul National University
+    - '2016-05-31 09:11:42.449316'
+    - '2016-05-31 09:20:17.575666'
+    - 4e175a0281a1dcf08b06c033b0302481ca219b26.png
+    - image/png
+    - 67776
+    - '2016-05-31 09:20:17.453178'
+  - - 2
+    - Bongshin Lee
+    - bongshin@microsoft.com
+    - Microsoft Research
+    - '2016-05-31 09:16:39.190382'
+    - '2016-05-31 09:20:17.767754'
+    - bongshin.png
+    - image/png
+    - 70397
+    - '2016-05-31 09:20:17.649830'
+  - - 3
+    - Jaegul Choo
+    - jchoo@korea.ac.kr
+    - Korea University
+    - '2016-06-13 02:06:24.942128'
+    - '2016-06-13 02:06:24.942128'
+    - jchoo.jpg
+    - image/jpeg
+    - 34269
+    - '2016-06-13 02:06:24.501932'
+  - - 4
+    - Youn-Ah Kang
+    - yakang@yonsei.ac.kr
+    - Yonsei University
+    - '2016-06-13 02:17:25.539737'
+    - '2016-06-13 02:17:25.539737'
+    - 제목-없음-2.png
+    - image/png
+    - 136437
+    - '2016-06-13 02:17:25.363260'
+  - - 5
+    - Wei Chen
+    - chenwei@cad.zju.edu.cn
+    - " Zhejiang  University"
+    - '2016-06-13 02:20:23.823527'
+    - '2016-06-13 02:20:23.823527'
+    - weichen.png
+    - image/png
+    - 86177
+    - '2016-06-13 02:20:23.711576'
+  - - 6
+    - Yun Jang
+    - jangy@sejong.edu
+    - Sejong University
+    - '2016-06-13 03:25:20.986390'
+    - '2016-06-13 03:25:20.986390'
+    - yunjang.png
+    - image/png
+    - 75039
+    - '2016-06-13 03:25:20.872868'
+  - - 7
+    - Naohisa Sakamoto
+    - naohisa.sakamoto@people.kobe-u.ac.jp
+    - Kobe University
+    - '2016-06-13 03:27:07.822399'
+    - '2016-06-13 03:27:07.822399'
+    - naohisa_sakamoto.png
+    - image/png
+    - 99897
+    - '2016-06-13 03:27:07.619658'
+  - - 8
+    - Won-Ki Jeong
+    - wkjeong@unist.ac.kr
+    - UNIST
+    - '2016-06-13 03:28:54.097184'
+    - '2016-06-13 04:50:43.835720'
+    - wkjeong.png
+    - image/png
+    - 126167
+    - '2016-06-13 03:28:53.975855'
+  - - 9
+    - Hsiang-Yun Wu
+    - yun@fj.ics.keio.ac.jp
+    - Keio University
+    - '2016-06-13 03:30:26.383360'
+    - '2016-06-13 03:38:42.933899'
+    - yun.jpg
+    - image/jpeg
+    - 10026
+    - '2016-06-13 03:38:42.869602'
+  - - 10
+    - Yingcai Wu
+    - ycwu@zju.edu.cn
+    - 'Zhejiang University '
+    - '2016-06-13 03:45:34.426135'
+    - '2016-06-13 03:45:34.426135'
+    - wu.png
+    - image/png
+    - 77496
+    - '2016-06-13 03:45:34.300747'
+  - - 11
+    - Tim Dwyer
+    - Tim.Dwyer@monash.edu
+    - Monash University
+    - '2016-06-13 03:48:29.741093'
+    - '2016-06-13 03:48:29.741093'
+    - dwyer.png
+    - image/png
+    - 87367
+    - '2016-06-13 03:48:29.613629'
+  - - 12
+    - Daniel Weiskopf
+    - weiskopf@visus.uni-stuttgart.de
+    - Universität Stuttgart
+    - '2016-06-13 09:16:08.185365'
+    - '2016-06-13 09:16:08.185365'
+    - daniel.png
+    - image/png
+    - 22668
+    - '2016-06-13 09:16:07.976746'
+  - - 13
+    - Young-Ho Kim
+    - yhkim@hcil.snu.ac.kr
+    - Seoul National University
+    - '2016-07-01 07:33:51.253329'
+    - '2016-07-01 07:33:51.253329'
+    - portrait-2105166cadc7a9dee3d44dd18f43a1432bf6e9e7b9b6fb771960da2b3c177776.jpg
+    - image/jpeg
+    - 110773
+    - '2016-07-01 07:33:50.746690'
+  - - 14
+    - Kyle Koh
+    - kyle@hcil.snu.ac.kr
+    - Seoul National University
+    - '2016-07-01 08:09:21.424979'
+    - '2016-07-01 08:13:02.923134'
+    - b0d85708cb510d2c2b826619e85455db1feb18f0.jpg
+    - image/jpeg
+    - 51252
+    - '2016-07-01 08:13:02.847487'
+  - - 15
+    - Hyunjoo Song
+    - hjsong@hcil.snu.ac.kr
+    - Seoul National University
+    - '2016-07-01 08:10:58.804116'
+    - '2016-07-01 08:10:58.804116'
+    - 62e9dd2dc12c77bd5232fa0c1f9c168c57647e05.jpg
+    - image/jpeg
+    - 37520
+    - '2016-07-01 08:10:58.717740'
+
+---
+chair_assignments:
+  columns:
+  - id
+  - chair_group_id
+  - chair_id
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - 1
+    - 0
+    - '2016-05-31 09:12:04.789941'
+    - '2016-05-31 09:12:04.789941'
+  - - 2
+    - 1
+    - 2
+    - 1
+    - '2016-05-31 09:16:52.026536'
+    - '2016-05-31 09:16:52.026536'
+  - - 5
+    - 4
+    - 6
+    - 0
+    - '2016-06-13 03:40:35.888153'
+    - '2016-06-13 03:40:35.888153'
+  - - 6
+    - 4
+    - 7
+    - 1
+    - '2016-06-13 03:40:35.889354'
+    - '2016-06-13 03:40:35.889354'
+  - - 7
+    - 5
+    - 8
+    - 0
+    - '2016-06-13 03:41:05.390849'
+    - '2016-06-13 03:41:05.390849'
+  - - 8
+    - 5
+    - 9
+    - 1
+    - '2016-06-13 03:41:05.392034'
+    - '2016-06-13 03:41:05.392034'
+  - - 13
+    - 3
+    - 3
+    - 0
+    - '2016-06-13 09:13:50.159127'
+    - '2016-06-13 09:13:50.159127'
+  - - 14
+    - 3
+    - 4
+    - 1
+    - '2016-06-13 09:13:50.160702'
+    - '2016-06-13 09:13:50.160702'
+  - - 15
+    - 3
+    - 5
+    - 2
+    - '2016-06-13 09:13:50.161944'
+    - '2016-06-13 09:13:50.161944'
+  - - 17
+    - 2
+    - 12
+    - 0
+    - '2016-06-13 09:21:36.977002'
+    - '2016-06-13 09:21:36.977002'
+  - - 18
+    - 2
+    - 10
+    - 1
+    - '2016-06-13 09:21:36.979163'
+    - '2016-06-13 09:21:36.979163'
+  - - 19
+    - 2
+    - 11
+    - 2
+    - '2016-06-13 09:21:36.980507'
+    - '2016-06-13 09:21:36.980507'
+  - - 20
+    - 6
+    - 13
+    - 
+    - '2016-07-01 07:34:00.935191'
+    - '2016-07-01 07:34:00.935191'
+  - - 21
+    - 7
+    - 15
+    - 
+    - '2016-07-01 08:11:30.107660'
+    - '2016-07-01 08:11:30.107660'
+  - - 22
+    - 8
+    - 14
+    - 
+    - '2016-07-01 08:11:41.931993'
+    - '2016-07-01 08:11:41.931993'
+
+---
+previous_conferences:
+  columns:
+  - id
+  - year
+  - location
+  - url
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 2016
+    - Taipei
+    - http://graphics07.csie.ntust.edu.tw/graphics/Vis_2016/
+    - '2016-07-05 05:35:45.719727'
+    - '2016-07-05 05:35:45.719727'
+  - - 2
+    - 2015
+    - Hangzhou
+    - http://www.cad.zju.edu.cn/home/pvis2015/
+    - '2016-07-05 05:36:14.656818'
+    - '2016-07-05 05:36:14.656818'
+  - - 3
+    - 2014
+    - Yokohama
+    - http://www.fj.ics.keio.ac.jp/pvis2014/guideline_v.html
+    - '2016-07-05 05:36:54.405990'
+    - '2016-07-05 05:36:54.405990'
+  - - 4
+    - 2013
+    - Sydney
+    - http://sydney.edu.au/engineering/it/groups/visual/pvis2013/welcome/index.php
+    - '2016-07-05 05:37:56.855676'
+    - '2016-07-05 05:37:56.855676'
+  - - 5
+    - 2012
+    - Songdo, Incheon
+    - http://hcil.snu.ac.kr/PacificVis2012
+    - '2016-07-05 05:38:14.541721'
+    - '2016-07-05 05:38:33.470359'
+  - - 6
+    - 2011
+    - Hong Kong
+    - http://i.cs.hku.hk/~pvis2011/
+    - '2016-07-05 05:38:57.102550'
+    - '2016-07-05 05:38:57.102550'
+  - - 7
+    - 2010
+    - Taipei
+    - http://graphics.csie.ntu.edu.tw/pvis2010/
+    - '2016-07-05 05:39:15.907007'
+    - '2016-07-05 05:39:15.907007'
+  - - 8
+    - 2009
+    - Beijing
+    - http://vis.pku.edu.cn/pvs2009/
+    - '2016-07-05 05:39:39.458516'
+    - '2016-07-05 05:39:39.458516'
+  - - 9
+    - 2008
+    - Kyoto
+    - http://www.viz.media.kyoto-u.ac.jp/conf/pvis2008/
+    - '2016-07-05 05:39:58.107646'
+    - '2016-07-05 05:39:58.107646'
