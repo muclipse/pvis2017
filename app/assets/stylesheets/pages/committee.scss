@@ -1,0 +1,16 @@
+.committee_subtitle{
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 3px;
+  position: relative;
+
+  .mail{
+    position: absolute;
+    right: 0px;
+    bottom:2px;
+    padding-left: 18px;
+    font-size: 13px; 
+    font-weight: bold;
+    color: #575757;
+  }
+
+}

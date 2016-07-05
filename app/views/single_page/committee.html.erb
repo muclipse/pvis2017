@@ -1,6 +1,11 @@
 <% if !@chair_groups.nil? %>
   <% @chair_groups.each do |group| %>
-    <%= content_tag :div, group.name, :class=>"content_subtitle" %>
+    <%= content_tag :div, :class=>"content_subtitle committee_subtitle" do %>
+      <%=group.name%>
+      <% if !group.email.empty? %>
+        <div class="mail"><%= "#{group.email} (at) pvis.org" %></div>
+      <% end %>
+    <% end %>
     <%= render partial: "chair_list_double_column", :locals=>{chairs: group.chairs} %>
   <% end %>
 <% end %>
