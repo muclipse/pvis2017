@@ -45,7 +45,7 @@ class SinglePageController < ApplicationController
       {
         :from=>"Nakseongdae Station",
         :to=>"Hoam Faculty House",
-        :url=>"https://www.google.co.kr/maps/dir/Nakseongdae/Seoul,+Gwanak-gu,+Bongcheon-dong,+239-1+%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90+%ED%98%B8%EC%95%94%EA%B5%90%EC%88%98%ED%9A%8C%EA%B4%80/@37.4728665,126.9584086,16z/am=t/data=!3m1!4b1!4m16!4m15!1m5!1m1!1s0x357ca0251fc2d811:0x1bea2f567c3135ef!2m2!1d126.963418!2d37.477117!1m5!1m1!1s0x357ca018af295bcd:0xb748d367f0649e98!2m2!1d126.9589084!2d37.4677522!2m2!7e2!8j1467108000?hl=en",
+        :url=>"https://www.google.com/maps/dir/37.4771974,126.9627278/37.4681199,126.9586284/@37.4763047,126.9595362,18z/data=!4m2!4m1!3e3",
         :description=>"Go out to the exit number 4. Take the bus 02 in front of the gas station. Then take off the bus at the 'Hoam faculty house' after about 5 minutes."
       }
 
