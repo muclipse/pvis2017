@@ -16,6 +16,14 @@
   </ul>
 <% end %>
 
+<%= subheader("News") %>
+<ul class="important_dates">
+  <li><b>
+    We're now accepting paper submission: <%= link_to "Link", "https://precisionconference.com/~vgtc" %>
+  </b></li>
+
+</ul>
+
 <%= subheader("Sponsors") %>
 <% if !@sponsors.nil? %>
   <%= content_tag :ul, :class=>"sponsor_list" do %>
