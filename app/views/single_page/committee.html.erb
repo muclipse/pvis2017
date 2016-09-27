@@ -8,4 +8,21 @@
     <% end %>
     <%= render partial: "chair_list_double_column", :locals=>{chairs: group.chairs} %>
   <% end %>
+
+  <%if !@program_committee.nil? %>  
+    <%= content_tag :div, :class=>"content_subtitle committee_subtitle" do %>
+        Program Committee
+    <% end %>
+
+
+    <%= content_tag :ul, :class=>"chairs" do %>
+      <% @program_committee.each do |member| %>
+              <%= content_tag :div, :class=>"member_mini" do %>
+                <%= content_tag :div, member[:name], :class=>"name" %>
+                <%= content_tag :div, member[:affiliation], :class=>"affiliation" %>
+              <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+
 <% end %>

@@ -14,3 +14,22 @@
   }
 
 }
+
+.chairs > .member_mini{
+
+  width: 356px;
+  display: inline-block;
+  margin-top: 12px;
+
+  .name{
+    font-weight: bold;
+  }    
+  .affiliation{
+    color: #757575;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  text-align: left;
+  font-size: 14px;
+}

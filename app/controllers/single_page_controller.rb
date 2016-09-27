@@ -22,6 +22,10 @@ class SinglePageController < ApplicationController
     @title = "Conference Organizers"
     @chair_groups = ChairGroup.all
 
+    @program_committee = CSV.parse(File.read("app/data/pc_list.csv"), :headers=>true).map do |csv_row|
+      {:name=>"#{csv_row["first_name"]} #{csv_row["last_name"]}", :affiliation=>csv_row["affiliation"]}
+    end
+
     assert_html 'double_column'
   end
 
