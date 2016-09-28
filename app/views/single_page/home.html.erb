@@ -10,3 +10,12 @@
   <%= subheader("General Conference Chairs") %>
   <%= render partial: "chair_list_double_column", :locals=>{chairs: @general_chairs} %>
 <% end %>
+
+
+
+<%= subheader("Tweets") %>
+  <a class="twitter-timeline" data-link-color="#E95F28" href="https://twitter.com/PacificVis" 
+    data-chrome="nofooter noborders noheader"
+    data-tweet-limit="3"
+    >Tweets by PacificVis</a> 
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
