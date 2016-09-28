@@ -61,7 +61,7 @@
         <table>
           <tr>
             <td class="logo">
-              <%= image_tag channel[:image] %>
+              <%= image_tag channel[:image], :class=>(channel[:size] == :big ? "big" : "") %>
             </td>
             <td class="content">
               <%= content_tag :div, channel[:name], :class=>"name" %>

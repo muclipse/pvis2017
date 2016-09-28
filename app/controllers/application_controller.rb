@@ -12,9 +12,9 @@ class ApplicationController < ActionController::Base
     @previous = PreviousConference.all.order("year desc") 
 
     @channels = [
-      {:name=>"Facebook", :image=>"facebook.png", :description=>"Official Facebook Page", :url=>"https://www.facebook.com/pacificvis/"},
-      {:name=>"Twitter", :image=>"twitter.png", :description=>"Official Twitter Account", :url=>"https://twitter.com/PacificVis"},
-      {:name=>"WeChat", :image=>"wechat.png", :description=>"亚太地区可视化会议微信公众号", :url=>"http://weixin.qq.com/r/FzkQCBvEl0borV9r92wF"}
+      {:name=>"Facebook", :size=>:small, :image=>"facebook.png", :description=>"Official Facebook Page", :url=>"https://www.facebook.com/pacificvis/"},
+      {:name=>"Twitter", :size=>:small, :image=>"twitter.png", :description=>"Official Twitter Account", :url=>"https://twitter.com/PacificVis"},
+      {:name=>"WeChat", :size=>:big, :image=>"wechat_qr.png", :description=>"Official WeChat Account (亚太地区可视化会议微信公众号)".html_safe, :url=>"#"}
     ]
   end
 
