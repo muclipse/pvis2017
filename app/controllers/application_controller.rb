@@ -5,11 +5,17 @@ class ApplicationController < ActionController::Base
   
   private 
   def use_common_content
-     @show_common_content =true
-     @sponsors = Sponsor.all.order("position asc").map{|s| {:name=>s.name, :thumbnail=>s.thumbnail.url, :url=>s.url}}
-     @upcoming_deadlines = YAML.load_file(Rails.root.join('app/data/dates.yaml'))['upcoming'].to_a.map{|e| {:name=>e[0], :time=>e[1]}} 
+    @show_common_content =true
+    @sponsors = Sponsor.all.order("position asc").map{|s| {:name=>s.name, :thumbnail=>s.thumbnail.url, :url=>s.url}}
+    @upcoming_deadlines = YAML.load_file(Rails.root.join('app/data/dates.yaml'))['upcoming'].to_a.map{|e| {:name=>e[0], :time=>e[1]}} 
 
     @previous = PreviousConference.all.order("year desc") 
+
+    @channels = [
+      {:name=>"Facebook", :image=>"facebook.png", :description=>"Official Facebook Page", :url=>"https://www.facebook.com/pacificvis/"},
+      {:name=>"Twitter", :image=>"twitter.png", :description=>"Official Twitter Account", :url=>"https://twitter.com/PacificVis"},
+      {:name=>"WeChat", :image=>"wechat.png", :description=>"亚太地区可视化会议微信公众号", :url=>"http://weixin.qq.com/r/FzkQCBvEl0borV9r92wF"}
+    ]
   end
 
   def assert_html(layout=nil)

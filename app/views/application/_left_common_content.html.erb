@@ -49,5 +49,28 @@
       </li>
       <% end %>
     <% end %>
-</ul>
+  </ul>
+<% end %>
+
+<% if !@channels.nil? %>
+  <%= subheader("Channels") %>
+  <ul class="channel_list">
+    <% @channels.each do |channel| %>
+      <li class="channel">
+        <%= link_to channel[:url], :target=>"_blank" do %>
+        <table>
+          <tr>
+            <td class="logo">
+              <%= image_tag channel[:image] %>
+            </td>
+            <td class="content">
+              <%= content_tag :div, channel[:name], :class=>"name" %>
+              <%= content_tag :div, channel[:description], :class=>"description" %>
+            </td>
+          </tr>
+        </table>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
 <% end %>
