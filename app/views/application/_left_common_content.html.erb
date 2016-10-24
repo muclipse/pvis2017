@@ -4,18 +4,19 @@
 <% else %>
   <ul class="important_dates">
     <% @upcoming_deadlines.each do |d| %>
-      <li>
+      <%= content_tag :li, :class=> (Time.now - Time.parse(d[:time]) > 0 ? "overline" : nil ) do %>
         <div class='date'>
           <%= d[:time] %>
         </div>
         <div class='description'>
           <%= d[:name].capitalize %>
         </div>
-      </li>
+      <% end %>
     <% end %>
   </ul>
 <% end %>
 
+<% if false %>
 <%= subheader("News") %>
 <ul class="important_dates">
   <li><b>
@@ -23,6 +24,7 @@
   </b></li>
 
 </ul>
+<% end %>
 
 <%= subheader("Sponsors") %>
 <% if !@sponsors.nil? %>

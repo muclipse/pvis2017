@@ -22,7 +22,7 @@ class CallForParticipationController < ApplicationController
   def index
     @title = "Call for Participation"
 
-    @deadlines = {:papers=>get_deadlines("papers")}
+    @deadlines = {:papers=>get_deadlines("papers"), :notes=>get_deadlines("notes")}
 
     assert_html
   end
@@ -40,6 +40,7 @@ class CallForParticipationController < ApplicationController
 
   def visualization_note
     @title = "Call for Visualization Notes"
+    @deadlines = get_deadlines("notes")
     assert_html
   end
 
