@@ -8,11 +8,11 @@
   'Camera Ready Paper Due': 'Feb. 8, 2017'
 
 'notes':
-  'Visualization Note Submission Deadline': 'Dec. 13, 2016, 11:59pm (PST)'
-  'Visualization Note Notification': 'Jan. 20, 2017'
-  'Camera Ready Visualization Note Due': 'Feb. 1, 2017'
-    
+  'Visualization Notes Submission Deadline': 'Dec. 13, 2016, 11:59pm (PST)'
+  'Visualization Notes Notification': 'Jan. 20, 2017'
+  'Camera Ready Visualization Notes Due': 'Feb. 1, 2017'
+  
 'upcoming':
-  'Visualization Note Due': 'Dec. 13, 2016, 11:59pm (PST)'
-  'Full Paper Due': 'Oct. 5, 2016, 11:59pm (PDT)'
-  'Full Paper Abstract Due': 'Sep. 28, 2016, 11:59pm (PDT)'
+  'Visualization Notes Due': ['Dec. 13, 2016, 11:59pm (PST)', '/cfp/visualization_notes']
+  'Full Paper Due': ['Oct. 5, 2016, 11:59pm (PDT)']
+  'Full Paper Abstract Due': ['Sep. 28, 2016, 11:59pm (PDT)']

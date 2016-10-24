@@ -38,7 +38,7 @@ class CallForParticipationController < ApplicationController
   end
 
 
-  def visualization_note
+  def visualization_notes
     @title = "Call for Visualization Notes"
     @deadlines = get_deadlines("notes")
     assert_html

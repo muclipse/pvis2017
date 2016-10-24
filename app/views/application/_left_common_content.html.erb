@@ -5,12 +5,23 @@
   <ul class="important_dates">
     <% @upcoming_deadlines.each do |d| %>
       <%= content_tag :li, :class=> (Time.now - Time.parse(d[:time]) > 0 ? "overline" : nil ) do %>
-        <div class='date'>
-          <%= d[:time] %>
-        </div>
-        <div class='description'>
-          <%= d[:name].capitalize %>
-        </div>
+        <% if d[:link].nil? %>
+          <div class='date'>
+            <%= d[:time] %>
+          </div>
+          <div class='description'>
+            <%= d[:name].capitalize %>
+          </div>
+        <% else %>
+          <%= link_to d[:link] do %>
+            <div class='date'>
+              <%= d[:time] %>
+            </div>
+            <div class='description'>
+              <%= d[:name].capitalize %>
+            </div>
+          <% end %>
+        <% end %>
       <% end %>
     <% end %>
   </ul>
