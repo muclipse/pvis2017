@@ -3,12 +3,13 @@ ActiveAdmin.register ChairGroup do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-  permit_params :name, :email, :attributes, :chair_assignments_attributes=>[:id, :chair_group_id, :chair_id, :position]
+  permit_params :name, :email, :position, :attributes, :chair_assignments_attributes=>[:id, :chair_group_id, :chair_id, :position]
 
   index do
     column :id
     column :name
     column :email
+    column :position
     column "Members" do |g|
       if !g.chairs.empty?
         ol do
@@ -26,6 +27,7 @@ ActiveAdmin.register ChairGroup do
     f.inputs "Detail" do
       f.input :name
       f.input :email
+      f.input :position
     end
   
     f.inputs "Members" do

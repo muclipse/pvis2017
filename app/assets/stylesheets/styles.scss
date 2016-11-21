@@ -2,6 +2,7 @@ $wrapper_width: 1024px;
 $footer_height: 42px;
 $link_color: #18A7C1;
 $strong_color: #FB6122;
+$thumb_size: 100px;
 
 @mixin signature_gradient(){
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff892a+0,e95757+100 */
@@ -243,6 +244,26 @@ table#home_main_wrapper {
         color: $strong_color;
       }
     }
+
+    p.no_top_margin{
+      margin-top: 0px;
+    }
+
+    ul.bullet_list{
+      color: #616161;
+      padding-left: 22px;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 600;
+
+      li{
+        margin-top: 20px;
+      }
+
+      li:first-child{
+        margin-top: 0px;
+      }
+    }
      
   }
 }
@@ -256,8 +277,8 @@ table#home_main_wrapper {
 .subheader{
     margin-top: 60px;
     margin-bottom: 24px;
-    
     font-weight: bold;
+
     font-size: 24px;
     padding-bottom: 8px;
     border-bottom: 1px solid #8d8d8d;
@@ -288,7 +309,8 @@ table#home_main_wrapper {
 .important_dates{
     list-style-type: none;
     font-size: 14px;
-    
+    font-weight: bold;
+
     li{
       margin-top: 24px;
     }
@@ -417,12 +439,12 @@ table#home_main_wrapper {
     margin-top: -20px;
     
     .thumb{
-      width: 118px;
+      width: $thumb_size;
     }
     
     .thumb_wrapper{
-      width: 118px;
-      height: 118px;
+      width: $thumb_size;
+      height: $thumb_size;
       border-radius: 60px;
       display: inline-block;
       overflow: hidden;

@@ -20,7 +20,7 @@ class SinglePageController < ApplicationController
     use_common_content 
       
     @title = "Conference Organizers"
-    @chair_groups = ChairGroup.all
+    @chair_groups = ChairGroup.all.order(:position, :id)
 
     @program_committee = CSV.parse(File.read("app/data/pc_list.csv"), :headers=>true).map do |csv_row|
       {:name=>"#{csv_row["first_name"]} #{csv_row["last_name"]}", :affiliation=>csv_row["affiliation"]}

@@ -22,7 +22,7 @@ class CallForParticipationController < ApplicationController
   def index
     @title = "Call for Participation"
 
-    @deadlines = {:papers=>get_deadlines("papers"), :notes=>get_deadlines("notes")}
+    @deadlines = {:papers=>get_deadlines("papers"), :notes=>get_deadlines("notes"), :contest=>get_deadlines("contest")}
 
     assert_html
   end
@@ -47,6 +47,12 @@ class CallForParticipationController < ApplicationController
 
   def poster
     @title = "Call for Posters"
+    assert_html
+  end
+
+  def contest
+    @title = "Call for Visual Storytelling Contest"
+    @deadlines = get_deadlines("contest")
     assert_html
   end
 

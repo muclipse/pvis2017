@@ -3,6 +3,7 @@ class CreateChairGroups < ActiveRecord::Migration
     create_table :chair_groups do |t|
       t.string :name
       t.string :email
+      t.integer :position
 
       t.timestamps null: false
     end

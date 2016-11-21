@@ -2,9 +2,9 @@
   <% deadlines.each do |deadline| %>
     <tr>
       <th>
-        <%= deadline[:name].capitalize%>
+        <%= deadline[:name].capitalize.html_safe%>
       </th>
-      <td>
+      <td width="40%">
         <%= deadline[:time]%>
       </td>
     </tr>

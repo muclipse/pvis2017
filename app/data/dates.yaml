@@ -11,8 +11,14 @@
   'Visualization Notes Submission Deadline': 'Dec. 13, 2016, 11:59pm (PST)'
   'Visualization Notes Notification': 'Jan. 20, 2017'
   'Camera Ready Visualization Notes Due': 'Feb. 1, 2017'
-  
+ 
+'contest':
+  'Visual Storytelling Contest Submission Deadline:<br>The title, submission file, abstract, and reference list should be submitted via PCS': 'Jan. 28, 2017, 11:59pm (PST)'
+  'Visual Storytelling Contest Notification': 'Feb. 14, 2017'
+  'Visual Storytelling Contest Final Submission': 'Feb. 21, 2017'
+
 'upcoming':
+  'Visual Storytelling Contest Due': ['Jan. 28, 2017, 11:59pm (PST)', '/cfp/contest']
   'Visualization Notes Due': ['Dec. 13, 2016, 11:59pm (PST)', '/cfp/visualization_notes']
   'Full Paper Due': ['Oct. 5, 2016, 11:59pm (PDT)']
   'Full Paper Abstract Due': ['Sep. 28, 2016, 11:59pm (PDT)']

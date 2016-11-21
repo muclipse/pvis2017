@@ -25,4 +25,10 @@
 </p>
 
 
+<%= subheader("Visual Storytelling Contest", {:text=>"See Detail", :url=>cfp_contest_path}) %>
+<p>
+  Data storytelling, narrative visualization, and explanatory visualization are popular emerging topics in visualization research. For the first time, IEEE Pacific Visualization (PacificVis) 2017 will feature a <strong>Visual Data Storytelling Contest</strong>. The purpose of this contest is to encourage students, researchers, artists, journalists, and other storytellers to demonstrate the value of visualization through effective visual data storytelling.
+</p>
 
+<%= subtitle("Important Dates") %>
+<%= render :partial=>'deadlines_table', :locals=>{deadlines: @deadlines[:contest]} %>
