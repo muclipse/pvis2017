@@ -28,3 +28,9 @@ PacificVis 2017 features a short paper track, called "Visualization Notes". The 
   Yun Jang, Sejong University, Korea<br>
   Naohisa Sakamoto, Kobe University, Japan
 </p>
+
+<%if !@note_committee.nil? %>  
+  <h3>Visualization Notes Committee:</h3>
+  <br>
+    <%= render partial: "committee_list", :locals=>{:committees=> @note_committee} %>
+<% end %>

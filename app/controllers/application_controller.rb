@@ -30,4 +30,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def get_committees(filename)
+    CSV.parse(File.read("app/data/#{filename}"), :headers=>true).map do |csv_row|
+      {:name=>"#{csv_row["first_name"]} #{csv_row["last_name"]}", :affiliation=>csv_row["affiliation"]}
+    end
+  end
+
 end

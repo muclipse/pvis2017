@@ -1,5 +1,5 @@
 class SinglePageController < ApplicationController
-  
+
   def home
     @banner_size = :tall
     @banner_image = "hoam_main.jpg"
@@ -22,9 +22,8 @@ class SinglePageController < ApplicationController
     @title = "Conference Organizers"
     @chair_groups = ChairGroup.all.order(:position, :id)
 
-    @program_committee = CSV.parse(File.read("app/data/pc_list.csv"), :headers=>true).map do |csv_row|
-      {:name=>"#{csv_row["first_name"]} #{csv_row["last_name"]}", :affiliation=>csv_row["affiliation"]}
-    end
+    @program_committee = get_committees("paper_pc_list.csv")
+    @note_committee = get_committees("note_pc_list.csv")
 
     assert_html 'double_column'
   end

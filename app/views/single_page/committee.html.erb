@@ -14,15 +14,15 @@
         Program Committee
     <% end %>
 
+    <%= render partial: "committee_list", :locals=>{:committees=> @program_committee} %>
+  <% end %>
 
-    <%= content_tag :ul, :class=>"chairs" do %>
-      <% @program_committee.each do |member| %>
-              <%= content_tag :div, :class=>"member_mini" do %>
-                <%= content_tag :div, member[:name], :class=>"name" %>
-                <%= content_tag :div, member[:affiliation], :class=>"affiliation" %>
-              <% end %>
-      <% end %>
+  <%if !@note_committee.nil? %>  
+    <%= content_tag :div, :class=>"content_subtitle committee_subtitle" do %>
+        Visualization Notes Committee
     <% end %>
+
+    <%= render partial: "committee_list", :locals=>{:committees=> @note_committee} %>
   <% end %>
 
 <% end %>

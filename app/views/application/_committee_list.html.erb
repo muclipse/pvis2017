@@ -1,0 +1,8 @@
+<%= content_tag :ul, :class=>"chairs" do %>
+  <% committees.each do |member| %>
+    <%= content_tag :div, :class=>"member_mini" do %>
+      <%= content_tag :div, member[:name], :class=>"name" %>
+      <%= content_tag :div, member[:affiliation], :class=>"affiliation" %>
+    <% end %>
+  <% end %>
+<% end %>

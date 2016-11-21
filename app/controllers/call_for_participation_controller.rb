@@ -41,6 +41,7 @@ class CallForParticipationController < ApplicationController
   def visualization_notes
     @title = "Call for Visualization Notes"
     @deadlines = get_deadlines("notes")
+    @note_committee = get_committees("note_pc_list.csv")
     assert_html
   end
 

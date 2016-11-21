@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 20160705052206) do
   create_table "chair_groups", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
+    t.integer  "position"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
