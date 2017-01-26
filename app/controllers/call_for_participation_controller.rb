@@ -7,7 +7,7 @@ class CallForParticipationController < ApplicationController
     @banner_size = :short
     @banner_image = ["dongdaemun.jpg", "banpo.jpg"].sample
 
-    @formatting_guideline = "http://www.cs.sfu.ca/~vis/Tasks/camera.html"
+    @formatting_guideline = "http://junctionpublishing.org/vgtc/Track/pacvis.html"
     @format_doc = "http://www.cs.sfu.ca/~vis/Templates/word_conf_vgtc_12.zip"
     @format_latex = "http://www.cs.sfu.ca/~vis/Templates/latex_conf_vgtc_080216.zip"
    
