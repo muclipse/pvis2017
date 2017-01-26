@@ -50,9 +50,21 @@ class SinglePageController < ApplicationController
         :to=>"Hoam Faculty House",
         :url=>"https://www.google.com/maps/dir/37.4771974,126.9627278/37.4681199,126.9586284/@37.4763047,126.9595362,18z/data=!4m2!4m1!3e3",
         :description=>"Go out to the exit number 4. Take the bus 02 in front of the gas station. Then take off the bus at the 'Hoam faculty house' after about 5 minutes."
-      }
+      }]
 
-    ]
+
+
+    @accomodations = CSV.parse(File.read("app/data/accomodation.csv"), :headers=>true).map do |csv_row|
+        {
+          :name=>csv_row["name"],
+          :url=>csv_row["link"],
+          :type=>csv_row["type"],
+          :subway=>csv_row["subway"],
+          :station=>csv_row["station"],
+          :thumbnail=>csv_row["thumbnail"],
+          :time=>csv_row["time"]
+        }
+      end
 
     assert_html 'double_column'
   end

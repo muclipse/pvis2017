@@ -518,8 +518,60 @@ table#home_main_wrapper {
     }
   }
 
+  .accomodations{
+    list-style-type: none;
+
+    li.accomodation:first-child{
+      margin-top: 0px;
+    }
+    li.accomodation{
+      margin-top: 30px;
+      .name{
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .type{
+        color: white;
+        font-weight: bold;
+        border-radius: 3px;
+        padding: 1px 5px;
+        margin-left: 5px;
+      }
+
+      .type.hotel{
+        background: #5e6580;
+      }
+
+      .type.guesthouse{
+        background: #a08b50;
+      }
+
+      .header{
+        margin-bottom: 5px;
+      }
+      .information{
+        table{
+          th{
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+    font-size: 13px;
+  }
+
 }
 
 .submission_system_button{
   margin-top:28px;
+}
+
+.info_element{
+  .title{
+    color: #252525;
+    font-weight: bold;
+    size: 12px;
+  }
+
 }
