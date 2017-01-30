@@ -1,3 +1,6 @@
+
+
+<% if false %>
 <%= subheader("Deadlines") %>
 <% if @upcoming_deadlines.nil? %>
   <p>Upcoming deadlines will be determined soon.</p>
@@ -26,16 +29,14 @@
     <% end %>
   </ul>
 <% end %>
+<% end %>
 
-<% if false %>
 <%= subheader("News") %>
 <ul class="important_dates">
   <li><b>
-    We're now accepting paper submission: <%= link_to "Link", "https://precisionconference.com/~vgtc" %>
+    Accomodation information was updated: <%= link_to "Link", venue_path(:anchor=>"accomodations") %>
   </b></li>
-
 </ul>
-<% end %>
 
 <%= subheader("Sponsors") %>
 <% if !@sponsors.nil? %>
