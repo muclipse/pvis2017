@@ -1,0 +1,34 @@
+<p>
+  The 10th IEEE Pacific Visualization Symposium (PacificVis 2017) will be held at Hoam Faculty House, Seoul National University, Seoul, Korea during April 18 to 21, 2017. PacificVis 2017 is soliciting high quality poster proposals. The PacificVis 2017 poster program is welcoming all areas of visualization research such as: information, scientific, graph, security, software and bio-visualization. Authors are encouraged to submit work in progress and practical applications to demonstrate novel and applicable ideas in all aspects of visualization. 
+</p>
+
+<%= subheader("Important Dates") %>
+<% if @deadlines %>
+  <%= render :partial=>'deadlines_table', :locals=>{deadlines: @deadlines} %>
+<% end %>
+
+<%= subheader("Submission") %>
+<p>
+  Submissions should be made electronically in Adobe PDF by the deadline. Poster abstract submissions of at most to 2 pages (two-column, single-spaced, 9 point font, including figures and tables) are invited. Manuscripts must be written in English, and follow the formatting <a href="http://junctionpublishing.org/vgtc/Track/pacvis.html" target=_blank>guidelines</a>. The posters will be peer-reviewed in a one-stage single-blind process. Posters will be evaluated by the PacificVis 2017 Poster Co-Chairs based on the level of contribution, validity of the results, originality, and clarity of presentation. The reviewing will be based primarily on the abstract content but will consider other supplemental materials (videos, images, and so on) if provided.
+</p>
+<%= submission_system_button %>
+
+
+<%= subheader("Poster Presentation")%>
+<p>
+  Accepted poster will be presented at the poster session of the conference. The final posters should be printed with no larger than paper size A0 size (841mm x 1189mm / 33.1" x 46.8"). At least one author of an accepted poster must register for and attend the conference to present the work. Authors will also be required to present a brief summary of their talk at the fast-forward session.
+</p>
+
+
+<%= subheader("Contact") %>
+<p>
+  For questions regarding poster submission, please do not hesitate to contact the chairs directly via <a href="mailto:posters@pvis.org">posters@pvis.org</a>
+</p>
+
+<h3>Posters Co-Chairs:</h3>
+<p class="no_top_margin">
+  Won-Ki Jeong, UNIST, Korea<br>
+  Hsiang-Yun Wu, Keio University, Japan
+</p>
+
+<%= end_back_link "Back to Call for Participation", cfp_path %>

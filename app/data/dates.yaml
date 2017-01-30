@@ -17,8 +17,14 @@
   'Visual Storytelling Contest Notification': 'Feb. 14, 2017'
   'Visual Storytelling Contest Final Submission': 'Feb. 21, 2017'
 
+'posters':
+  'Poster papers Submission Deadline': 'Jan. 26, 2017, 11:59pm (PST)'
+  'Poster papers notification': 'Feb. 15, 2017'
+  'Camera ready poster papers due': 'Feb. 22, 2017, 11:59pm (PST)'
+
 'upcoming':
   'Visual Storytelling Contest Due': ['Jan. 28, 2017, 11:59pm (PST)', '/cfp/contest']
+  'Posters due': ['Jan. 26, 2017, 11:59pm (PST)', '/cfp/posters']
   'Visualization Notes Due': ['Dec. 13, 2016, 11:59pm (PST)', '/cfp/visualization_notes']
   'Full Paper Due': ['Oct. 5, 2016, 11:59pm (PDT)']
   'Full Paper Abstract Due': ['Sep. 28, 2016, 11:59pm (PDT)']

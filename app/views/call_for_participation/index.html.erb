@@ -19,10 +19,14 @@
 <%= render :partial=>'deadlines_table', :locals=>{deadlines: @deadlines[:notes]} %>
 
 
-<%= subheader("Posters", {:text=>"See Detail (TBA)", :url=>nil}) %>
+<%= subheader("Posters", {:text=>"See Detail", :url=>cfp_poster_path}) %>
 <p>
-  PacificVis is a unified visualization conference, welcoming all areas of visualization research such as: information, scientific, graph, security, software and bio-visualization. Authors are invited to submit original and unpublished research and practical applications in all areas of visualization. We encourage high-quality posters that pertain to visualization, e.g., work-in-progress.
+  PacificVis 2017 is soliciting high quality poster proposals. The PacificVis 2017 poster program is welcoming all areas of visualization research such as: information, scientific, graph, security, software and bio-visualization. Authors are encouraged to submit work in progress and practical applications to demonstrate novel and applicable ideas in all aspects of visualization.
 </p>
+
+<%= subtitle("Important Dates") %>
+  <%= render :partial=>'deadlines_table', :locals=>{deadlines: @deadlines[:posters]}     %>
+
 
 
 <%= subheader("Visual Storytelling Contest", {:text=>"See Detail", :url=>cfp_contest_path}) %>

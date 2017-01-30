@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   scope "/cfp" do
     get 'paper' => 'call_for_participation#paper', :as=>"cfp_paper"
     get 'visualization_notes' => 'call_for_participation#visualization_notes', :as=>"cfp_note"
-    get 'poster' => 'call_for_participation#poster', :as=>"cfp_poster"
+    get 'posters' => 'call_for_participation#posters', :as=>"cfp_poster"
     get 'contest' => 'call_for_participation#contest', :as=>"cfp_contest"
   end
 
