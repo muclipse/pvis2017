@@ -49,7 +49,7 @@ class SinglePageController < ApplicationController
         :from=>"Nakseongdae Station",
         :to=>"Hoam Faculty House",
         :url=>"https://www.google.com/maps/dir/37.4771974,126.9627278/37.4681199,126.9586284/@37.4763047,126.9595362,18z/data=!4m2!4m1!3e3",
-        :description=>"Go out to the exit number 4. Take the bus 02 in front of the gas station. Then take off the bus at the 'Hoam faculty house' after about 5 minutes."
+        :description=>"Go out to the exit number 4. Go straight and turn left at the corner of the gas station. Take the bus 02 in front of the bakery [Jean Boulagnerie (쟝 블랑제리)]. Then take off the bus at the 'Hoam faculty house' after about 5 minutes."
       }]
 
 

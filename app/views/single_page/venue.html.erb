@@ -33,17 +33,14 @@ PacificVis 2017 will be hosted in Hoam Faculty House of Seoul National Universit
 </table>
 </div>
 
-<div id="accomodations"></div>
-<%= subheader("Accomodations") %>
-<p>
-  This year, we do not provide discount for accomodations.  Our recommended accomodation list:
-</p>
+<div id="accommodations"></div>
+<%= subheader("Recommended Accommodations") %>
 
-<ul class="accomodations">
+<ul class="accommodations">
   <% @accomodations.each do |acc| %>
-    <li class="accomodation">
+    <li class="accommodation">
       <div class="header">
-        <%= link_to content_tag(:span, acc[:name], :class=>"name"), acc[:url], :target=>"_blank" %>
+        <%= link_to content_tag(:span, acc[:name].html_safe, :class=>"name"), acc[:url], :target=>"_blank" %>
         <%= content_tag :span, acc[:type], :class=> acc[:type].downcase=="hotel"? "type hotel" : "type guesthouse" %>
       </div>
       <div class="information">
