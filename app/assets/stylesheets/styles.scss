@@ -163,6 +163,30 @@ ul#gnb{
         a:active{
           color: inherit;
         }
+
+        a.special_button{
+          background: #e95757;
+          color: white;
+          padding: 6px 16px;
+          border-radius: 4px;
+        }
+
+        a.special_button:link{
+          color: white;
+        }
+
+        a.special_button:visited{
+          color: white;
+        }
+
+        a.special_button:hover{
+          color: white;
+          background: rgba(233, 108, 87, 0.81);
+        }
+
+        a.special_button:active{
+          color: white;
+        }
     }
     
     li:first-child{
