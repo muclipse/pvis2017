@@ -68,5 +68,18 @@ class SinglePageController < ApplicationController
 
     assert_html 'double_column'
   end
+
+  def registration
+    @banner_size = :short
+    @banner_image = ["dongdaemun.jpg", "banpo.jpg"].sample 
+    use_common_content 
+      
+    @title = "Registration"
+
+    yml = YAML.load_file(Rails.root.join('app/data/fee.yaml'))
+    @fees = yml.keys.map{ |k| {:type=>k, :early=>yml[k]["early"], :late=>yml[k]["late"]} }
+  
+    assert_html 'double_column'
+  end
   
 end

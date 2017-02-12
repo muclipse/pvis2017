@@ -1,0 +1,34 @@
+<p>  
+  The 10th <strong>IEEE Pacific Visualization Symposium (PacificVis 2017)</strong> will be held at Hoam Faculty House, Seoul National University, <strong>Seoul, Korea</strong> during April 18 to 21, 2017. As part of PacificVis, workshop/tutorial sessions will be held on April 18, with the Symposium starting from April 19.
+</p>
+
+<%= subheader("Registration Fees (USD)") %>
+
+<table class="registration_fees">
+  <tr class="header">
+    <th>Identity</th><td>Early Bird (~ March 17)</td><td>Late/On-site (after March 17)</td>
+
+    <% @fees.each do |fee_unit| %>
+      <tr class="normal">
+        <th><%=fee_unit[:type] %></th>
+        <td>$<%=fee_unit[:early] %></td>
+        <td>$<%=fee_unit[:late] %></td>
+      </tr>
+    <% end %>
+
+  </tr>
+
+</table>
+
+<div class="footnote">
+  *Workshop and Reception fees are included.
+  </div>
+
+<p>
+<strong>Important Author Information</strong><br>
+The author registration deadline is 17 March 2017. 
+Each Author Registration is valid for ONE full paper.
+At least one author must be registered at the <u>full author rate</u> <u>regardless of whether or not they are student.</u></p>
+
+
+<%= content_tag :div, (link_to (content_tag :span, "Go to Register", :class=>"button big"), "http://www.cvent.com/d/hvqffn", :target=>:blank), :class=>"big_button_container" %>

@@ -1,0 +1,15 @@
+'Full Member':
+  'early': 580
+  'late' : 730
+'Full Non-Member':
+  'early': 740
+  'late': 930  
+'Student Member':
+  'early': 220
+  'late': 300
+'Student Non-Member':
+  'early': 320
+  'late': 400
+'Life/Retired Member':
+  'early': 350
+  'late': 450

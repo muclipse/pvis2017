@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get 'venue' => 'single_page#venue', :as=>"venue"
 
+  get 'registration' => 'single_page#registration', :as=>"registration"
+
   get 'cfp' => 'call_for_participation#index', :as=>"cfp"
 
   scope "/cfp" do
