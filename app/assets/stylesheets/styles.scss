@@ -648,6 +648,30 @@ table.registration_fees{
   }
 }
 
+ul.program_list{
+  list-style-type: none;
+  padding-left: 10px;
+  
+  li{
+    margin-top: 32px;
+  }
+  li:first-child{
+    margin-top: 0px;
+  }
+
+  .program_element{
+    .title{
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .authors{
+      font-size: 13px;
+      font-weight: 500;
+      color: #757575;
+    }
+  }
+}
+
 .footnote{
   margin-top: 15px;
   font-size: 13px;

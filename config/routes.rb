@@ -22,6 +22,8 @@ Rails.application.routes.draw do
     get 'contest' => 'call_for_participation#contest', :as=>"cfp_contest"
   end
 
+  get 'programs' => 'programs#index', :as=>"programs" 
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
