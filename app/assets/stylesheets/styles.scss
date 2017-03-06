@@ -369,6 +369,9 @@ table#home_main_wrapper {
     li{
       display: inline-block;
       margin-right: 15px;
+      img{
+        max-width: 200px;
+      }
     }
     
     
@@ -673,9 +676,31 @@ ul.program_list{
   }
 
   .program_element{
+
+    .program_type{
+      font-size: 11px;
+    }
+
+    .program_type.paper{
+      background: #bb5a7e;
+    }
+
+    .program_type.note{
+      background: #bb905a;
+    }
+
+    .program_type.poster{
+      background: #8c7796;
+    }
+
+    .program_type.contest{
+      background: #5a97bb;
+    }
+
     .title{
       font-size: 14px;
       font-weight: 600;
+      margin-top: 4px;
     }
     .authors{
       font-size: 13px;

@@ -1,6 +1,7 @@
 <li>
   <%= link_to program_path(program[:id]) do%>
-  <div class="program_element">
+    <div class="program_element">
+      <%= content_tag :span, program[:type], :class=>["program_type", !program[:type].nil?? program[:type].downcase : nil] %>
     <div class="title">
       <%= program[:title] %>
     </div>

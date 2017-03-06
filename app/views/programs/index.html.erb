@@ -25,17 +25,22 @@
 
 <% end %>
 
+<%= subheader("Posters") %>
+<ul class="program_list">
+  <% @posters.each do |paper| %>
+    <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
+  <% end %>
+</ul>
+
+
 <%= subheader("Visualization Contests") %>
 <ul class="program_list">
   <% @contests.each do |paper| %>
     <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
   <% end %>
 </ul>
-
-
-<%= subheader("Posters") %>
 <ul class="program_list">
-  <% @posters.each do |paper| %>
+  <% @contests.each do |paper| %>
     <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
   <% end %>
 </ul>

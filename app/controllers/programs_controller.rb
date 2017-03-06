@@ -24,6 +24,7 @@ class ProgramsController < ApplicationController
       {
         :id=> csv_row[0],
         :title=> csv_row["title"],
+        :type => csv_row[0].start_with?("papers")? "Paper" : (csv_row[0].start_with?("notes")? "Note" : (csv_row[0].start_with?("contest")? "Contest" : (csv_row[0].start_with?("posters")? "Poster" : "Unclassified"))),
         :abstract=> csv_row["abstract"],
         :authors => [1,2,3,4,5,6,7,8,9,10].map do |i|
             given = csv_row["Given name #{i}"]
