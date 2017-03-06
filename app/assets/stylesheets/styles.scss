@@ -660,6 +660,18 @@ ul.program_list{
     margin-top: 0px;
   }
 
+  a:link{
+    color: inherit;
+  }
+
+  a:visited{
+    color: inherit;
+  }
+
+  a:hover{
+    color: $link_color;
+  }
+
   .program_element{
     .title{
       font-size: 14px;
@@ -670,6 +682,10 @@ ul.program_list{
       font-weight: 500;
       color: #757575;
     }
+  }
+
+  .program_element:hover{
+    background: #fafafa;
   }
 }
 
@@ -687,9 +703,22 @@ ul.program_list{
   background: #2bc198;
 }
 
+ul.keynote_list{
+  list-style-type: none;
+  li{
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  li:first-child{
+    margin-top: 0px;
+  }
+}
+
 .keynote_element{
 
-  margin-top: 30px;
+  table{
+    width: 100%;
+  }
 
   .thumb{
       width: $thumb_size;
@@ -709,10 +738,6 @@ ul.program_list{
     li{
       display: inline-block;
       margin-top: 20px;
-    }
-
-    table{
-      width: 356px;
     }
 
     td.description{
@@ -737,8 +762,39 @@ ul.program_list{
     }
 }
 
+a .keynote_element:hover{
+  background: #fafafa;
+}
+
 .keynote_element:first-child{
   margin-top: 0px;
+}
+
+ul.program_author_list{
+  list-style-type: none;
+  padding-bottom: 20px;
+  li{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 30px;
+
+    .name{
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .affiliation{
+      font-size:12px;
+    }
+    .email{
+      font-size: 12px;
+      color: #757575;
+      margin-left: 12px;
+    }
+  }
+
+  li:last-child{
+    margin-right: 0px;
+  }
 }
 
 .footnote{

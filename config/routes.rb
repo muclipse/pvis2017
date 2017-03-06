@@ -24,6 +24,10 @@ Rails.application.routes.draw do
 
   get 'programs' => 'programs#index', :as=>"programs" 
 
+  get 'keynotes/:id' => 'single_page#keynote', :as=>"keynote"
+
+  get 'programs/:id' => 'programs#program', :as=>"program"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

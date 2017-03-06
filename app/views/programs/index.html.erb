@@ -2,9 +2,15 @@
 
 
 <%= subheader("Keynotes") %>
+<ul class="keynote_list">
 <% @keynotes.each do |keynote| %>
-  <%= render :partial=>"keynote_element", :locals=>{:keynote=>keynote} %>
+  <li>
+  <%= link_to keynote_path(keynote[:day]) do %>
+    <%= render :partial=>"keynote_element", :locals=>{:keynote=>keynote} %>
+  <% end %>
+  </li>
 <% end %>
+</ul>
 
 <%= subheader("Sessions") %>
 <% @session_dict.each do |session_name, programs| %>
@@ -18,6 +24,13 @@
   </ul>
 
 <% end %>
+
+<%= subheader("Visualization Contests") %>
+<ul class="program_list">
+  <% @contests.each do |paper| %>
+    <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
+  <% end %>
+</ul>
 
 
 <%= subheader("Posters") %>

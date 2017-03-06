@@ -10,7 +10,7 @@
       
       <%= content_tag :td, :id=>"home_main" do %>
         <% if !@title.nil? %>
-          <%= content_tag :h2, @title %>
+          <%= content_tag :h2, @title.html_safe %>
         <% end %>
         <%= content_for?(:main_column) ? yield(:main_column) : yield %>
       <% end %>

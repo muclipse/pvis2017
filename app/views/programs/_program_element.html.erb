@@ -1,4 +1,5 @@
 <li>
+  <%= link_to program_path(program[:id]) do%>
   <div class="program_element">
     <div class="title">
       <%= program[:title] %>
@@ -7,4 +8,5 @@
       <%= program[:authors].map{|a| a[:name] }.to_sentence%>
     </div>
   </div>
+  <% end %>
 </li>
