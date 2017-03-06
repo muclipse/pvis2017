@@ -8,6 +8,15 @@ class ProgramsController < ApplicationController
     @banner_image = ["dongdaemun.jpg", "banpo.jpg"].sample
    
     use_common_content
+
+
+    @session_rows = CSV.parse(File.read("app/data/sessions.csv"), :headers=>true).map do |csv_row|
+        {
+          :session=>csv_row[0],
+          :id=>csv_row["id"]
+        }
+      end
+  
   end
 
   def load_program(venue)
@@ -16,8 +25,17 @@ class ProgramsController < ApplicationController
         :id=> csv_row[0],
         :title=> csv_row["title"],
         :abstract=> csv_row["abstract"],
-        :authors => csv_row["authors"].split(",").map{ |n| n.strip }
-        #:authors=> csv_row["authors"].split(",").zip(csv_row["emails"].split(",")).map { |arr| {:name=>arr[0].strip, :email=>arr[1].strip} }
+        :authors => [1,2,3,4,5,6,7,8,9,10].map do |i|
+            given = csv_row["Given name #{i}"]
+            family = csv_row["Family name #{i}"]
+            email = csv_row["Email address #{i}"]
+            affiliation = csv_row["Primary Affiliation #{i} - Institution"]
+            if given != nil
+              {:name=> "#{given} #{family}", :email=>email, :affiliation=>affiliation } 
+            else
+              nil
+            end
+          end.reject{|a| a == nil}
       }
     end
   end
@@ -30,6 +48,28 @@ class ProgramsController < ApplicationController
     @papers = load_program("papers")
     @posters = load_program("posters")
     @notes = load_program("notes")
+
+    @session_dict = {}
+    @session_rows.each{|s| @session_dict[s[:session]] = []}
+
+    @session_rows.each do |s|
+      if(s[:id].start_with?("paper"))
+        list = @papers
+      elsif s[:id].start_with?("poster")
+        list = @posters
+      elsif s[:id].start_with?("note")
+        list = @notes
+      end
+
+      found = list.find{|p| p[:id] == s[:id] }
+      if !found.nil?
+        @session_dict[s[:session]] << found
+      end
+
+    end
+
+    @keynotes = get_keynotes
+
 
     assert_html
   end

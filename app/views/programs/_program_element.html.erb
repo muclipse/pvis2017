@@ -4,7 +4,7 @@
       <%= program[:title] %>
     </div>
     <div class="authors">
-      <%= program[:authors].to_sentence%>
+      <%= program[:authors].map{|a| a[:name] }.to_sentence%>
     </div>
   </div>
 </li>

@@ -1,22 +1,26 @@
 <p>Detailed time tables will be announced soon.</p>
 
-<h3>Papers</h3>
 
-<ul class="program_list">
-  <% @papers.each do |paper| %>
-    <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
-  <% end %>
-</ul>
+<%= subheader("Keynotes") %>
+<% @keynotes.each do |keynote| %>
+  <%= render :partial=>"keynote_element", :locals=>{:keynote=>keynote} %>
+<% end %>
 
-<h3>Visualization Notes</h3>
-<ul class="program_list">
-  <% @notes.each do |paper| %>
-    <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
-  <% end %>
-</ul>
+<%= subheader("Sessions") %>
+<% @session_dict.each do |session_name, programs| %>
+
+  <h3><%= session_name %></h3>
+
+  <ul class="program_list">
+    <% programs.each do |paper| %>
+      <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
+    <% end %>
+  </ul>
+
+<% end %>
 
 
-<h3>Posters</h3>
+<%= subheader("Posters") %>
 <ul class="program_list">
   <% @posters.each do |paper| %>
     <%= render :partial=>'program_element', :locals=>{:program=>paper} %>

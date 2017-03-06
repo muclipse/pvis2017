@@ -651,6 +651,7 @@ table.registration_fees{
 ul.program_list{
   list-style-type: none;
   padding-left: 10px;
+  margin-bottom: 60px;
   
   li{
     margin-top: 32px;
@@ -670,6 +671,74 @@ ul.program_list{
       color: #757575;
     }
   }
+}
+
+.program_type{
+
+        color: white;
+        font-weight: 600;
+        border-radius: 3px;
+        padding: 1px 5px;
+        background: #2bc198;
+        font-size: 14px;
+}
+
+.program_type.keynote{
+  background: #2bc198;
+}
+
+.keynote_element{
+
+  margin-top: 30px;
+
+  .thumb{
+      width: $thumb_size;
+    }
+    
+    .thumb_wrapper{
+      width: $thumb_size;
+      height: $thumb_size;
+      border-radius: 60px;
+      display: inline-block;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+    
+    li{
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    table{
+      width: 356px;
+    }
+
+    td.description{
+      vertical-align: middle;
+      padding-left: 16px;
+      .name{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .affiliation{
+        font-size: 14px;
+        font-weight: 600;
+        color: #616161;
+        margin-left: 20px;
+      }
+      .title{
+        font-size: 18px;
+        font-style: italic;
+        margin-top: 10px;
+        color: #505050;
+      }
+    }
+}
+
+.keynote_element:first-child{
+  margin-top: 0px;
 }
 
 .footnote{

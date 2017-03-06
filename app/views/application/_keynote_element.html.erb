@@ -1,0 +1,18 @@
+<table class="keynote_element">
+    <tr>
+        <td class="thumb">
+            <div class="thumb_wrapper">
+                <%= image_tag keynote[:thumbnail] %>
+            </div>
+        </td>
+        <td class="description">
+            <div>
+                <span class="program_type keynote day">Day <%= keynote[:day] %></span>
+            </div>
+            
+            <span class="name"><%= keynote[:presenter] %></span>
+            <span class="affiliation"><%= keynote[:affiliation] %></span>
+            <div class="title">"<%= keynote[:title].html_safe %>"</div>
+        </td>
+    </tr>
+</table>
