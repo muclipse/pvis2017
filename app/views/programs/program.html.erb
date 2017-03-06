@@ -1,0 +1,20 @@
+
+<ul class="program_author_list">
+  <% @program[:authors].each do |author| %>
+  <li>
+    <span class="name"><%= author[:name] %></span>
+    
+    <% if !author[:email].nil? %>
+      <span class="email"><%= author[:email].sub("@", " (at) ") %></span>
+    <% end %>
+    
+    <div class="affiliation"><%= author[:affiliation] %></div>
+  </li>
+  <% end %>
+</ul>
+
+
+<h3>Abstract</h3>
+<p>
+  <%= @program[:abstract]%>
+</p>

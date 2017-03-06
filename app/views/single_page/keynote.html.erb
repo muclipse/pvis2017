@@ -1,0 +1,12 @@
+
+<%= render :partial=>"keynote_element", :locals=>{:keynote=>@keynote} %>
+
+<%= subheader("Abstract") %>
+<p>
+  <%= @keynote[:abstract].html_safe %>
+</p>
+
+<%= subheader("Bio") %>
+<p>
+  <%= @keynote[:bio].html_safe %>
+</p>

@@ -40,6 +40,17 @@ class ProgramsController < ApplicationController
     end
   end
 
+  def load_contest
+    CSV.parse(File.read("app/data/program_list_contests.csv"), :headers=>true).map do |csv_row|
+      {
+        :id=> csv_row[0],
+        :title=> csv_row["title"],
+        :abstract=> csv_row["abstract"],
+        :authors => csv_row["authors"].split(",").map{|a| {:name=>a.strip}}
+      }
+    end
+  end
+
   public
   def index
 
@@ -48,6 +59,7 @@ class ProgramsController < ApplicationController
     @papers = load_program("papers")
     @posters = load_program("posters")
     @notes = load_program("notes")
+    @contests = load_contest
 
     @session_dict = {}
     @session_rows.each{|s| @session_dict[s[:session]] = []}
@@ -70,6 +82,18 @@ class ProgramsController < ApplicationController
 
     @keynotes = get_keynotes
 
+
+    assert_html
+  end
+
+  def program
+    id = params[:id]
+    programs = load_program("papers").concat(load_program("posters")).concat(load_program("notes")).concat(load_contest)
+    @program = programs.find{|p| p[:id] == id }
+
+    if !@program.nil?
+      @title = @program[:title]
+    end
 
     assert_html
   end

@@ -81,5 +81,20 @@ class SinglePageController < ApplicationController
   
     assert_html 'double_column'
   end
+
+  def keynote
+
+    @banner_size = :short
+    @banner_image = ["dongdaemun.jpg", "banpo.jpg"].sample 
+    use_common_content 
+
+
+    id = params[:id]
+    @keynote = get_keynotes.find{ |k| k[:day] == id.to_i }
+      
+    @title = "[Keynote] #{@keynote[:title]}"
+
+    assert_html 'double_column'
+  end
   
 end
