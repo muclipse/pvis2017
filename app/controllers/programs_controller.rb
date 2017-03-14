@@ -46,6 +46,7 @@ class ProgramsController < ApplicationController
       {
         :id=> csv_row[0],
         :title=> csv_row["title"],
+        :type=> "Contest",
         :abstract=> csv_row["abstract"],
         :authors => csv_row["authors"].split(",").map{|a| {:name=>a.strip}}
       }
@@ -80,6 +81,17 @@ class ProgramsController < ApplicationController
       end
 
     end
+
+    @session_ordered_names = [
+      "Graphs and Networks I",
+      "Immersion, VR, and Interaction",
+      "Geospatial Visualization and Applications",
+      "Multidimensional Data, Multifields, and Uncertainty",
+      "Volume Visualization",
+      "Graphs and Networks II",
+      "Text, Annotation, and Coding",
+      "Medical, Biological, and Archaeological Visualization",
+      "Perception, Quality, and Scalability"]
 
     @keynotes = get_keynotes
 

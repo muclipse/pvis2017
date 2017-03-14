@@ -822,6 +822,95 @@ ul.program_author_list{
   }
 }
 
+table.program_time_table{
+  width: 100%;
+  text-align: center;
+  vertical-align: center;
+
+  tr.days{
+    th{
+      border: 2px solid white;
+      background: #fafafa;
+      .title{
+          font-size: 14px;
+          font-weight: bold;
+      }
+      .date{
+          font-weight: 600;
+          font-size: 12px;
+          color: #575757;
+      }
+    }
+  }
+
+  tr.normal{
+    th,td{
+      border-top: 1px solid #afafaf;
+      border-bottom: 1px solid #afafaf;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+    th{
+      font-size: 13px;
+      font-weight: 600;
+    }
+    td{
+      font-size: 12px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+
+      a:link{
+        color: inherit;
+      }
+      a:visited{
+        color: inherit;
+      }
+
+      a:hover{
+        color:$link_color;
+      }
+    }
+
+    td.coffee{    
+      background: #c0c1c1;
+      color: white;
+      font-style: italic;
+    }
+
+    td.lunch{    
+      background: #7d5a5a;
+      color: white;
+      font-style: italic;
+    }
+
+    td.empty{
+      background: #575757;
+    }
+
+    td.vast{
+      background: #ececec;
+      font-weight: bold;
+    }
+
+    td.posters{
+      font-weight: bold;
+    }
+
+    td.session{
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .session{
+        font-weight: bold;
+    }
+
+    .session_title{
+        font-weight: 600;
+    }
+  }
+}
+
 .footnote{
   margin-top: 15px;
   font-size: 13px;
