@@ -17,3 +17,5 @@
 /tmp
 /public/files
 /public/assets
+
+.DS_Store
