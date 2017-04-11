@@ -830,15 +830,16 @@ table.program_time_table{
   tr.days{
     th{
       border: 2px solid white;
-      background: #fafafa;
+      background: #575757;
       .title{
           font-size: 14px;
           font-weight: bold;
+          color: white;
       }
       .date{
           font-weight: 600;
           font-size: 12px;
-          color: #575757;
+          color: #fafafa;
       }
     }
   }
@@ -884,7 +885,7 @@ table.program_time_table{
     }
 
     td.empty{
-      background: #575757;
+      background: rgb(247,247,247);
     }
 
     td.vast{
