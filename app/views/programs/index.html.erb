@@ -13,7 +13,7 @@
 
   <tr class="normal">
     <th>08:40 - 09:00</th>
-    <td rowspan="10" class="vast">Pacific VAST</td>
+    <td rowspan="12" class="vast">Pacific VAST</td>
     <td>Opening</td>
     <td>Posters Fast-forward</td>
     <%= session(7, 2) %>
@@ -47,16 +47,23 @@
   </tr>
 
 <tr class="normal">
-    <th>11:40 - 13:00</th>
-    <td colspan="2" class="lunch">Lunch break</td>
+    <th rowspan="2">11:40 - 13:00</th>
+    <td rowspan="2" colspan="2" class="lunch">Lunch break</td>
     <td>Closing (30 mins)</td>
   </tr>
 
 <tr class="normal">
-    <th>13:00 - 14:20</th>
-    <%= session(1) %>
-    <%= session(5) %>
-    <td rowspan="6" class="empty"></td>
+    <td class="lunch" rowspan="2">Lunch break</td>
+</tr>
+
+<tr class="normal">
+    <th rowspan="2">13:00 - 14:20</th>
+    <%= session(1,2) %>
+    <%= session(5,2) %>
+  </tr>
+
+  <tr class="normal">
+  <td rowspan="6" class="empty"></td>
   </tr>
 
 <tr class="normal">
@@ -88,7 +95,7 @@
     <td>Banquit (Yangjae)</td>
   </tr>
 
-  
+
 </table>
 
 <%= subheader("Keynotes") %>
