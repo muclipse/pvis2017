@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
   def get_keynotes
     [
       {
-        :day=>1,
+        :day=>2,
         :presenter=>"David Ebert",
         :affiliation=>"Purdue University",
         :thumbnail=>"david_ebert.jpg",
@@ -30,7 +30,7 @@ class ApplicationController < ActionController::Base
         :bio=>"David Ebert is the Silicon Valley Professor of Electrical and Computer Engineering at Purdue University, a Fellow of the IEEE, and director of the Visual Analytics for Command Control and Interoperability Center (VACCINE), the Visualization Science team of the Department of Homeland Security’s Command Control and Interoperability Center of Excellence. Ebert performs research in visual analytics, volume rendering, illustrative visualization, and procedural abstraction of complex, massive data. He is the recipient of the 2017 IEEE Computer Society vgTC Technical Achievement Award for seminal contributions in visual analytics. He has been very active in the visualization community, serving as Editor in Chief of IEEE Transactions on Visualization and Computer Graphics, serving as IEEE Computer Society Vice President and the IEEE Computer Society’s VP of Publications, and successfully managing a large program of external funding to develop more effective methods for visually communicating information."
       },
       {
-        :day=>2,
+        :day=>3,
         :presenter=>"Gerard Jounghyun Kim",
         :affiliation=>"Korea University",
         :thumbnail=>"gerard_kim.jpg",
