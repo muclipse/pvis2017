@@ -95,6 +95,7 @@ class ProgramsController < ApplicationController
 
     @keynotes = get_keynotes
 
+    @workshops = get_workshops
 
     assert_html
   end

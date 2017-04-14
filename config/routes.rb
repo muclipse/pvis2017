@@ -26,6 +26,8 @@ Rails.application.routes.draw do
 
   get 'keynotes/:id' => 'single_page#keynote', :as=>"keynote"
 
+  get 'workshops/:id' => 'single_page#workshop', :as=>"workshop"
+
   get 'programs/:id' => 'programs#program', :as=>"program"
 
   # Example of regular route:

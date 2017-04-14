@@ -1,0 +1,13 @@
+<li>
+  <%= link_to workshop_path(workshop["id"]) do%>
+    <div class="program_element" id="<%= workshop["id"] %>">
+    <%= content_tag :span, workshop["type"], :class=>["program_type", !workshop["type"].nil?? workshop["type"].downcase : nil] %>
+      <div class="title">
+        <%= workshop["title"] %>
+      </div>
+      <div class="authors">
+        <%= workshop["presenter"] %>, <%= workshop["affiliation"] %>
+      </div>
+    </div>
+  <% end %>
+</li>

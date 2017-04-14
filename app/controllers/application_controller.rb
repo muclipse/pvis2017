@@ -41,6 +41,10 @@ class ApplicationController < ActionController::Base
     ]
   end
 
+  def get_workshops
+    YAML.load_file(Rails.root.join('app/data/workshops.yaml'))
+  end
+
   def assert_html(layout=nil)
     respond_to do |format|
       if layout.nil?

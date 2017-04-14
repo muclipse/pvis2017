@@ -82,6 +82,20 @@ class SinglePageController < ApplicationController
     assert_html 'double_column'
   end
 
+  def workshop
+    @banner_size = :short
+    @banner_image = ["dongdaemun.jpg", "banpo.jpg"].sample 
+    use_common_content 
+
+
+    id = params[:id]
+    @workshop = get_workshops.map{|k,v| v}.flatten(1).find{|v| v["id"] == id}
+      
+    @title = @workshop["title"]
+
+    assert_html 'double_column'
+  end
+
   def keynote
 
     @banner_size = :short
