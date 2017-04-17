@@ -1,0 +1,3 @@
+[submodule "public/showcases"]
+	path = public/showcases
+	url = https://github.com/SNU-HCIL/PacificVis2017
