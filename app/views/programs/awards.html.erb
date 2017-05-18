@@ -1,0 +1,63 @@
+<p>
+  We introduce the award winners in PaciticVis 2017 Awards, which honor exceptional submissions to each venue!
+</p>
+
+<%= subheader("Papers") %>
+
+<h3>Best Paper Award</h3>
+  <ul class="program_list">
+    <% @awards[:papers][:best].each do |paper| %>
+      <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
+    <% end %>
+  </ul>
+
+<h3>Honorable Mention Award</h3>
+  <ul class="program_list">
+    <% @awards[:papers][:honorable].each do |paper| %>
+      <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
+    <% end %>
+</ul>
+
+
+
+<%= subheader("Visualization Notes") %>
+
+<h3>Best Visualization Notes Award</h3>
+  <ul class="program_list">
+    <% @awards[:notes][:best].each do |paper| %>
+      <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
+    <% end %>
+  </ul>
+
+<%= subheader("Posters") %>
+
+<h3>Best Poster Award</h3>
+  <ul class="program_list">
+    <% @awards[:posters][:best].each do |paper| %>
+      <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
+    <% end %>
+  </ul>
+
+<h3>Honorable Mention Award</h3>
+  <ul class="program_list">
+    <% @awards[:posters][:honorable].each do |paper| %>
+      <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
+    <% end %>
+</ul>
+
+
+<%= subheader("Visual Storytelling Contest") %>
+
+<h3>Best Winner</h3>
+  <ul class="program_list">
+    <% @awards[:contest][:best].each do |paper| %>
+      <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
+    <% end %>
+  </ul>
+
+<h3>Honorable Mention</h3>
+  <ul class="program_list">
+    <% @awards[:contest][:honorable].each do |paper| %>
+      <%= render :partial=>'program_element', :locals=>{:program=>paper} %>
+    <% end %>
+</ul>

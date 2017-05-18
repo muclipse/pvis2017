@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   
   get 'committee' => 'single_page#committee', :as=>"committee"
 
+  get 'awards' => 'programs#awards', :as=>"awards"
+
   get 'venue' => 'single_page#venue', :as=>"venue"
 
   get 'registration' => 'single_page#registration', :as=>"registration"

@@ -112,4 +112,37 @@ class ProgramsController < ApplicationController
     assert_html
   end
 
+  def awards
+    @title = "Award Winners for PacificVis 2017"
+
+    papers = load_program("papers")
+    posters = load_program('posters')
+    notes = load_program("notes")
+    contests = load_contest
+
+    @awards = {
+      :papers=>{
+        :best=>papers.select{|p| p[:id] == "papers_1490"},
+        :honorable=>[2379, 1685, 2984].map{|num| papers.find{|p| p[:id] == "papers_#{num}"}}
+      },
+
+      :notes=>{
+        :best=>notes.select{|p| p[:id] == "notes-112"},
+        :honorable=>[]
+      },
+
+      :posters=>{
+        :best=>posters.select{|p| p[:id] == "posters-120"},
+        :honorable=>posters.select{|p| p[:id] == "posters-121"}
+      },
+
+      :contest=>{
+        :best=>contests.select{|p| p[:id] == "contest-108"},
+        :honorable=>contests.select{|p| p[:id] == "contest-106"}
+      }
+    }
+
+    assert_html
+  end
+
 end
